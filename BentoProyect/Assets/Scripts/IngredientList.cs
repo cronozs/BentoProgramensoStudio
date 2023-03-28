@@ -67,7 +67,7 @@ public class IngredientList : MonoBehaviour
     private void OnBecameInvisible()
     {
         CloneClient();
-        Destroy(this.gameObject);
+        Destroy(this.gameObject);   
     }
 
     private void OnTriggerEnter(Collider other)
