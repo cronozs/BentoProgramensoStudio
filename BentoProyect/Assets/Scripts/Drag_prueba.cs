@@ -22,7 +22,7 @@ public class Drag_prueba : MonoBehaviour
     
     void OnMouseDrag()
     {
-        transform.position = MouseWorldPosition() + offset;
+        copia.transform.position = MouseWorldPosition() + offset;
     }
  
     void OnMouseUp()
@@ -34,12 +34,12 @@ public class Drag_prueba : MonoBehaviour
         {
             if(hitInfo.transform.tag == destinationTag)
             {
-                transform.position = hitInfo.transform.position;
+                copia.transform.position = hitInfo.transform.position;
                 Verificar();
             }
             else
             {
-                Destroy(this.gameObject);
+                Destroy(copia.gameObject);
             }
         }
         transform.GetComponent<Collider>().enabled = true;
@@ -58,6 +58,7 @@ public class Drag_prueba : MonoBehaviour
         {
             StartCoroutine(Gone(canvaWin));
             puntaje += 1;
+            StartCoroutine(DestroyGameobject());
         }
         else
         {
@@ -70,5 +71,11 @@ public class Drag_prueba : MonoBehaviour
         canva.SetActive(true);
         yield return new WaitForSeconds(1);
         canva.SetActive(false);
+    }
+
+    IEnumerator DestroyGameobject()
+    {
+        yield return new WaitForSeconds(2);
+        Destroy(gameObject);
     }
 }

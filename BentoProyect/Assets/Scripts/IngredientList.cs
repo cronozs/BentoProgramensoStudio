@@ -11,10 +11,11 @@ public class IngredientList : MonoBehaviour
     [SerializeField] private Image show;
     [SerializeField] private Image timer;
     [SerializeField] private GameObject Loose;
+    [SerializeField] private Canvas win;
 
 
     private float _time;
-    [SerializeField] private float _actualTime;
+    private float _actualTime;
     private Renderer _renderer;
     private int _selector;
 
@@ -40,6 +41,7 @@ public class IngredientList : MonoBehaviour
             float fill = _actualTime / 10;
             fill = (1 - fill) + 0;  
             timer.fillAmount = fill;
+            Win();
         }
         else if (_actualTime >= 10 && _actualTime <= 10.4f)
         {
@@ -61,7 +63,7 @@ public class IngredientList : MonoBehaviour
 
     private void MoveX()
     {
-        this.transform.Translate(5 * Time.deltaTime,0,0);
+        this.transform.Translate(10 * Time.deltaTime,0,0);
     }
 
     private void OnBecameInvisible()
@@ -88,5 +90,13 @@ public class IngredientList : MonoBehaviour
         this.transform.position = new Vector3(-15, 5, 5);
         Instantiate(this.gameObject);
         MoveX();
+    }
+
+    private void Win()
+    {
+        if(win.gameObject.activeInHierarchy == true)
+        {
+            MoveX();
+        }
     }
 }
