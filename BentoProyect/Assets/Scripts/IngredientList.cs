@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class IngredientList : MonoBehaviour
 {
     [SerializeField] private GameObject[] ingredients = new GameObject[3];
+    [SerializeField] private Drag_prueba[] ingred = new Drag_prueba[3];
     [SerializeField] private Image show;
     [SerializeField] private Image timer;
     [SerializeField] private GameObject Loose;
@@ -16,11 +17,6 @@ public class IngredientList : MonoBehaviour
     private float _actualTime;
     private Renderer _renderer;
     private int _selector;
-    // Start is called before the first frame update
-    void Awake()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -73,9 +69,13 @@ public class IngredientList : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("enter");
-            _time = _actualTime;
-            this.transform.Translate(0, 0, 0);
-            ChoseIngredients();
+        _time = _actualTime;
+        this.transform.Translate(0, 0, 0);
+        foreach(var ing in ingred)
+        {
+            ing.orden = show.gameObject;
+        }
+        ChoseIngredients();
 
     }
 

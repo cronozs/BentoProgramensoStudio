@@ -237,6 +237,7 @@ MonoBehaviour:
   orden: {fileID: 1976015620}
   canvaWin: {fileID: 1077827519}
   canvaLose: {fileID: 417393831}
+  puntaje: 0
 --- !u!1 &199991631
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,6 +865,7 @@ MonoBehaviour:
   orden: {fileID: 1976015620}
   canvaWin: {fileID: 1077827519}
   canvaLose: {fileID: 417393831}
+  puntaje: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,6 +1165,7 @@ MonoBehaviour:
   orden: {fileID: 1976015620}
   canvaWin: {fileID: 1077827519}
   canvaLose: {fileID: 417393831}
+  puntaje: 0
 --- !u!1 &1382563356
 GameObject:
   m_ObjectHideFlags: 0
@@ -1436,6 +1439,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6946193308959565326, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
+      propertyPath: ingred.Array.data[0]
+      value: 
+      objectReference: {fileID: 98860440}
+    - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
+      propertyPath: ingred.Array.data[1]
+      value: 
+      objectReference: {fileID: 915269129}
+    - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
+      propertyPath: ingred.Array.data[2]
+      value: 
+      objectReference: {fileID: 1194658007}
+    - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: ingredients.Array.data[0]
       value: 
       objectReference: {fileID: 98860435}
@@ -1453,7 +1468,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 383066285747359183, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.86
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 383066285747359183, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: m_LocalPosition.y
