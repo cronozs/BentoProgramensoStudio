@@ -48,7 +48,7 @@ public class IngredientList : MonoBehaviour
         }
         else if (actualTime > 10)
         {
-            Loose.SetActive(true);
+            //Loose.SetActive(true);
             /*time = Time.time;
             actualTime = 0;*/
         }
