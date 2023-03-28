@@ -14,7 +14,7 @@ public class IngredientList : MonoBehaviour
 
 
     private float _time;
-    private float _actualTime;
+    [SerializeField] private float _actualTime;
     private Renderer _renderer;
     private int _selector;
 
@@ -41,17 +41,21 @@ public class IngredientList : MonoBehaviour
             fill = (1 - fill) + 0;  
             timer.fillAmount = fill;
         }
-        else if (_actualTime > 10)
+        else if (_actualTime >= 10 && _actualTime <= 10.4f)
         {
             Loose.SetActive(true);
             MoveX();
+        }
+        else
+        {
             StartCoroutine(ShowCanva());
+            MoveX();
         }
     }
 
     IEnumerator ShowCanva()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.2f);
         Loose.SetActive(false);
     }
 
