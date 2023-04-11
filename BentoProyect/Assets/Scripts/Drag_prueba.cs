@@ -12,6 +12,7 @@ public class Drag_prueba : MonoBehaviour
     public GameObject canvaWin, canvaLose;
     public float puntaje=0;
     private GameObject copia;
+    [SerializeField] private IngredientList cylinder;
     
     void OnMouseDown()
     {
@@ -63,6 +64,7 @@ public class Drag_prueba : MonoBehaviour
         else
         {
             StartCoroutine(Gone(canvaLose));
+            StartCoroutine(DestroyGameobject());
         }
     }
 
@@ -76,6 +78,8 @@ public class Drag_prueba : MonoBehaviour
     IEnumerator DestroyGameobject()
     {
         yield return new WaitForSeconds(2);
-        Destroy(gameObject);
+        Destroy(copia);
+        cylinder = FindObjectOfType<IngredientList>(true);
+        cylinder.gameObject.SetActive(true);
     }
 }

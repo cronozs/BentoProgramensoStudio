@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEditor;
 
 public class IngredientList : MonoBehaviour
 {
@@ -12,13 +13,21 @@ public class IngredientList : MonoBehaviour
     [SerializeField] private Image timer;
     [SerializeField] private GameObject Loose;
     [SerializeField] private Canvas win;
+    [SerializeField] private float speed = 10;
+    //int i = 0;
 
-
+    private bool _stop = true;
     private float _time;
     private float _actualTime;
+    private float _actualfil;
     private Renderer _renderer;
     private int _selector;
 
+    private void Start()
+    {
+        _actualTime = 3f;
+        _stop = true;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -36,11 +45,13 @@ public class IngredientList : MonoBehaviour
     private void Timer()
     {
         _actualTime = Time.time - _time;
+        float fill = _actualTime / 10;
+        fill = (1 - fill) + 0;
+        timer.fillAmount = fill;
+        speed = 10;
         if (_actualTime <= 10)
         {
-            float fill = _actualTime / 10;
-            fill = (1 - fill) + 0;  
-            timer.fillAmount = fill;
+            _actualfil = Time.time + _time;
             Win();
         }
         else if (_actualTime >= 10 && _actualTime <= 10.4f)
@@ -63,40 +74,59 @@ public class IngredientList : MonoBehaviour
 
     private void MoveX()
     {
-        this.transform.Translate(10 * Time.deltaTime,0,0);
+        this.transform.Translate(speed * Time.deltaTime, 0, 0);
     }
 
     private void OnBecameInvisible()
     {
+        StopCoroutine(Salida());
+        //this.gameObject.SetActive(false);
         CloneClient();
-        Destroy(this.gameObject);   
+        _actualTime = 11;
+        Destroy(this.gameObject);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("enter");
-        _time = _actualTime;
-        this.transform.Translate(0, 0, 0);
-        foreach(var ing in ingred)
-        {
-            ing.orden = show.gameObject;
-        }
-        ChoseIngredients();
 
+            Debug.Log("enr");
+            _time = _actualTime;
+            this.transform.Translate(0, 0, 0);
+            foreach (var ing in ingred)
+            {
+                ing.orden = show.gameObject;
+            }
+            ChoseIngredients();
+            _stop = false;
     }
 
     private void CloneClient()
     {
+        timer.fillAmount = 0;
+        show.material = null;
         this.transform.position = new Vector3(-15, 5, 5);
+        if (!this.gameObject.scene.isLoaded) return;
         Instantiate(this.gameObject);
         MoveX();
     }
 
     private void Win()
     {
-        if(win.gameObject.activeInHierarchy == true)
+        if (win.gameObject.activeInHierarchy == true || Loose.activeInHierarchy == true)
+        {
+            speed = 0.08f;
+            timer.fillAmount = _actualfil;
+            StartCoroutine(Salida());
+        }
+    }
+
+    private IEnumerator Salida()
+    {
+        while (true)
         {
             MoveX();
+            _time = _actualTime;
+            yield return null;
         }
     }
 }
