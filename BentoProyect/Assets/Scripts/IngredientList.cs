@@ -25,7 +25,6 @@ public class IngredientList : MonoBehaviour
 
     private void Start()
     {
-        _actualTime = 3f;
         _stop = true;
     }
     // Update is called once per frame
