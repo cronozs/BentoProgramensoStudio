@@ -20,5 +20,15 @@ public class ToggleScenes : MonoBehaviour
    {
        SceneManager.LoadScene("Settings");
    }
-    
+
+    public void Mode()
+    {
+        SceneManager.LoadScene("Mode");
+    }
+    public void Level_1()
+    {
+        SceneManager.LoadScene("Level_1");
+    }
+
+
 }
