@@ -16,21 +16,15 @@ public class IngredientList : MonoBehaviour
     [SerializeField] private float speed = 10;
     //int i = 0;
 
-    private bool _stop = true;
     private float _time;
     private float _actualTime;
-    private float _actualfil;
     private Renderer _renderer;
     private int _selector;
 
-    private void Start()
-    {
-        _stop = true;
-    }
-    // Update is called once per frame
+    
     void Update()
     {
-        Timer();
+        MoveX();
     }
 
     private void ChoseIngredients()
@@ -41,32 +35,9 @@ public class IngredientList : MonoBehaviour
         show.material = _renderer.material;
     }
 
-    private void Timer()
-    {
-        _actualTime = Time.time - _time;
-        float fill = _actualTime / 10;
-        fill = (1 - fill) + 0;
-        timer.fillAmount = fill;
-        speed = 10;
-        if (_actualTime <= 10)
-        {
-            _actualfil = Time.time + _time;
-            Win();
-        }
-        else if (_actualTime >= 10 && _actualTime <= 10.4f)
-        {
-            Loose.SetActive(true);
-            MoveX();
-        }
-        else
-        {
-            StartCoroutine(ShowCanva());
-            MoveX();
-        }
-    }
-
     IEnumerator ShowCanva()
     {
+        speed = 10;
         yield return new WaitForSeconds(1.2f);
         Loose.SetActive(false);
     }
@@ -78,25 +49,23 @@ public class IngredientList : MonoBehaviour
 
     private void OnBecameInvisible()
     {
-        StopCoroutine(Salida());
-        //this.gameObject.SetActive(false);
         CloneClient();
-        _actualTime = 11;
         Destroy(this.gameObject);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-
+        if (other.tag == "order")
+        {
             Debug.Log("enr");
-            _time = _actualTime;
-            this.transform.Translate(0, 0, 0);
+            _time = Time.time;
+            speed = 0;
             foreach (var ing in ingred)
             {
                 ing.orden = show.gameObject;
             }
             ChoseIngredients();
-            _stop = false;
+        }
     }
 
     private void CloneClient()
@@ -106,26 +75,32 @@ public class IngredientList : MonoBehaviour
         this.transform.position = new Vector3(-15, 5, 5);
         if (!this.gameObject.scene.isLoaded) return;
         Instantiate(this.gameObject);
-        MoveX();
     }
 
     private void Win()
     {
         if (win.gameObject.activeInHierarchy == true || Loose.activeInHierarchy == true)
         {
-            speed = 0.08f;
-            timer.fillAmount = _actualfil;
-            StartCoroutine(Salida());
+            speed = 10;
         }
     }
 
-    private IEnumerator Salida()
+    private void OnTriggerStay(Collider other)
     {
-        while (true)
+        _actualTime = Time.time - _time;
+        float fill = _actualTime / 10;
+        fill = (1 - fill) + 0;
+        timer.fillAmount = fill;
+        if (_actualTime <= 10)
         {
-            MoveX();
-            _time = _actualTime;
-            yield return null;
+            Win();
+        }
+        else
+        {
+            Loose.SetActive(true);
+            StartCoroutine(ShowCanva());
         }
     }
+
+
 }
