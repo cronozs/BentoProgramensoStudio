@@ -29,6 +29,6 @@ public class animation_ui : MonoBehaviour
             if (loop) index = 0;
             if (destroyOnEnd) Destroy (gameObject);
         }
-    }
+    } 
     
 }
