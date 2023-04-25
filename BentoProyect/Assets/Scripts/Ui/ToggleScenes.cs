@@ -5,10 +5,15 @@ using UnityEngine;
 
 public class ToggleScenes : MonoBehaviour
 {
+
     
-   public void StartGame()
+
+    
+    public void StartGame()
     {
+
         SceneManager.LoadScene("PlayScene");
+       
     }
     
    public void Menu()
@@ -20,5 +25,28 @@ public class ToggleScenes : MonoBehaviour
    {
        SceneManager.LoadScene("Settings");
    }
+
+    public void Mode()
+    {
+        SceneManager.LoadScene("Mode");
+    }
+    public void Level_1()
+    {
+        SceneManager.LoadScene("Level_1");
+    }
+
     
+       public void PauseGame()
+        {
+            Time.timeScale = 0;
+            
+
+    }
+        public void ResumeGame()
+        {
+            Time.timeScale = 1;
+    }
+    
+
+
 }
