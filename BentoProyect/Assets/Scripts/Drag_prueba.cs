@@ -36,7 +36,8 @@ public class Drag_prueba : MonoBehaviour
             if(hitInfo.transform.tag == destinationTag)
             {
                 copia.transform.position = hitInfo.transform.position;
-                Verificar();
+                hitInfo.transform.tag = gameObject.transform.tag;
+                //Verificar();
             }
             else
             {
@@ -53,7 +54,7 @@ public class Drag_prueba : MonoBehaviour
         return Camera.main.ScreenToWorldPoint(mouseScreenPos);
     }
 
-    void Verificar()
+    /*void Verificar()
     {
         if (gameObject.tag == orden.tag)
         {
@@ -81,5 +82,5 @@ public class Drag_prueba : MonoBehaviour
         Destroy(copia);
         cylinder = FindObjectOfType<IngredientList>(true);
         cylinder.gameObject.SetActive(true);
-    }
+    }*/
 }

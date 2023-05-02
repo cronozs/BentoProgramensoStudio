@@ -9,7 +9,7 @@ public class IngredientList : MonoBehaviour
 {
     [SerializeField] private GameObject[] ingredients = new GameObject[3];
     [SerializeField] private Drag_prueba[] ingred = new Drag_prueba[3];
-    [SerializeField] private Image show;
+    [SerializeField] private Image[] show = new Image[3];
     [SerializeField] private Image timer;
     [SerializeField] private GameObject Loose;
     [SerializeField] private Canvas win;
@@ -29,10 +29,13 @@ public class IngredientList : MonoBehaviour
 
     private void ChoseIngredients()
     {
-        _selector = Random.Range(0, ingredients.Length);
-        _renderer = ingredients[_selector].GetComponent<Renderer>();
-        show.tag = ingredients[_selector].tag;
-        show.material = _renderer.material;
+        foreach (var sho in show)
+        {
+            _selector = Random.Range(0, ingredients.Length);
+            _renderer = ingredients[_selector].GetComponent<Renderer>();
+            sho.tag = ingredients[_selector].tag;
+            sho.material = _renderer.material;
+        }
     }
 
     IEnumerator ShowCanva()
@@ -62,7 +65,7 @@ public class IngredientList : MonoBehaviour
             speed = 0;
             foreach (var ing in ingred)
             {
-                ing.orden = show.gameObject;
+                ing.orden = show[0].gameObject;
             }
             ChoseIngredients();
         }
@@ -71,7 +74,10 @@ public class IngredientList : MonoBehaviour
     private void CloneClient()
     {
         timer.fillAmount = 0;
-        show.material = null;
+        foreach (var sho in show)
+        {
+            sho.material = null;
+        }
         this.transform.position = new Vector3(-15, 5, 5);
         if (!this.gameObject.scene.isLoaded) return;
         Instantiate(this.gameObject);
