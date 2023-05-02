@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Drag_prueba : MonoBehaviour
@@ -10,10 +11,12 @@ public class Drag_prueba : MonoBehaviour
     public string destinationTag = "DropArea";
     public GameObject orden;
     public GameObject canvaWin, canvaLose;
-    public float puntaje=0;
     private GameObject copia;
+    public showPoints show;
+
     [SerializeField] private IngredientList cylinder;
     
+
     void OnMouseDown()
     {
         copia = Instantiate(gameObject,transform.position,Quaternion.identity);
@@ -58,8 +61,10 @@ public class Drag_prueba : MonoBehaviour
         if (gameObject.tag == orden.tag)
         {
             StartCoroutine(Gone(canvaWin));
-            puntaje += 1;
             StartCoroutine(DestroyGameobject());
+            
+            show.addScore(1f);
+            
         }
         else
         {
