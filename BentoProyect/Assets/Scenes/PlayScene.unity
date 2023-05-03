@@ -365,7 +365,6 @@ MonoBehaviour:
   orden: {fileID: 1976015620}
   canvaWin: {fileID: 1077827519}
   canvaLose: {fileID: 417393831}
-  puntaje: 0
   cylinder: {fileID: 0}
 --- !u!1 &199991631
 GameObject:
@@ -1142,7 +1141,6 @@ MonoBehaviour:
   orden: {fileID: 1976015620}
   canvaWin: {fileID: 1077827519}
   canvaLose: {fileID: 417393831}
-  puntaje: 0
   cylinder: {fileID: 0}
 --- !u!1 &934346270
 GameObject:
@@ -1639,7 +1637,6 @@ MonoBehaviour:
   orden: {fileID: 1976015620}
   canvaWin: {fileID: 1077827519}
   canvaLose: {fileID: 417393831}
-  puntaje: 0
   cylinder: {fileID: 0}
 --- !u!1 &1379348212
 GameObject:

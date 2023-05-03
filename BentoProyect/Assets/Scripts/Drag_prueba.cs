@@ -12,7 +12,6 @@ public class Drag_prueba : MonoBehaviour
     public GameObject orden;
     public GameObject canvaWin, canvaLose;
     private GameObject copia;
-    public showPoints show;
 
     [SerializeField] private IngredientList cylinder;
     
@@ -63,7 +62,7 @@ public class Drag_prueba : MonoBehaviour
             StartCoroutine(Gone(canvaWin));
             StartCoroutine(DestroyGameobject());
             
-            show.addScore(1f);
+            showPoints.instance.addScore();
             
         }
         else
