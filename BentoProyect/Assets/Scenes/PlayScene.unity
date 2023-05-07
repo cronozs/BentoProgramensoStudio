@@ -365,6 +365,8 @@ MonoBehaviour:
   orden: {fileID: 1976015620}
   canvaWin: {fileID: 1077827519}
   canvaLose: {fileID: 417393831}
+  cliente: {fileID: 1777696265}
+  enojada: {fileID: 21300000, guid: 1383331345fdd1f4c95a49af828d91dc, type: 3}
   cylinder: {fileID: 0}
 --- !u!1 &199991631
 GameObject:
@@ -517,7 +519,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1a5cf52f3b4164547807298cbab6df12, type: 2}
+  - {fileID: 2100000, guid: b1a68b17f94f7d244bb0a9f56af9446b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1141,6 +1143,8 @@ MonoBehaviour:
   orden: {fileID: 1976015620}
   canvaWin: {fileID: 1077827519}
   canvaLose: {fileID: 417393831}
+  cliente: {fileID: 0}
+  enojada: {fileID: 0}
   cylinder: {fileID: 0}
 --- !u!1 &934346270
 GameObject:
@@ -1637,6 +1641,8 @@ MonoBehaviour:
   orden: {fileID: 1976015620}
   canvaWin: {fileID: 1077827519}
   canvaLose: {fileID: 417393831}
+  cliente: {fileID: 0}
+  enojada: {fileID: 0}
   cylinder: {fileID: 0}
 --- !u!1 &1379348212
 GameObject:
@@ -2002,6 +2008,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1777696266}
   - component: {fileID: 1777696267}
+  - component: {fileID: 1777696268}
   m_Layer: 0
   m_Name: npcmonachina
   m_TagString: Untagged
@@ -2018,8 +2025,8 @@ Transform:
   m_GameObject: {fileID: 1777696265}
   m_LocalRotation: {x: 0.06975647, y: -0, z: -0, w: 0.9975641}
   m_LocalPosition: {x: -0.23, y: -0.2, z: -0.9}
-  m_LocalScale: {x: 1.6252899, y: 1.7530832, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.73, y: 0.78739846, z: 0.44915065}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 383066286236365043}
   m_RootOrder: 1
@@ -2065,7 +2072,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c60239d35a34ea545827ef3cf814260e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 61766cdea4620fc4c9fe94ec27fd9407, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2076,6 +2083,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1777696268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777696265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12f561e4f13965248b38d0b9a3e770b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enojada: {fileID: 21300000, guid: 1383331345fdd1f4c95a49af828d91dc, type: 3}
+  normal: {fileID: 21300000, guid: 61766cdea4620fc4c9fe94ec27fd9407, type: 3}
+  feliz: {fileID: 21300000, guid: 69d62f50d4105a548b21eb294a5a05de, type: 3}
+  lose: {fileID: 417393834}
+  win: {fileID: 1077827522}
 --- !u!1 &1976015620 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 383066284302822390, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
@@ -2248,10 +2272,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 383066284907040484, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 383066284907040485, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 963194227}
+    - target: {fileID: 383066285747359176, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 383066285747359177, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 383066285747359179, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: m_Name
       value: Cylinder

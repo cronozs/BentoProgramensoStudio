@@ -12,6 +12,8 @@ public class Drag_prueba : MonoBehaviour
     public GameObject orden;
     public GameObject canvaWin, canvaLose;
     private GameObject copia;
+    public GameObject cliente;
+    public Sprite enojada;
 
     [SerializeField] private IngredientList cylinder;
     
@@ -68,6 +70,8 @@ public class Drag_prueba : MonoBehaviour
         else
         {
             StartCoroutine(Gone(canvaLose));
+            Debug.Log("cambio");
+           // cliente.GetComponent<SpriteRenderer>().sprite = enojada;
             StartCoroutine(DestroyGameobject());
         }
     }
