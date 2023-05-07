@@ -17,12 +17,12 @@ public class showPoints : MonoBehaviour
 
     private void Start()
     {
-        Puntaje.text =  points.ToString();
+        Puntaje.text = "$" +  points.ToString();
     }
 
     public void addScore()
     {
         points += 1;
-        Puntaje.text = points.ToString();
+        Puntaje.text =  "$" + points.ToString();
     }
 }
