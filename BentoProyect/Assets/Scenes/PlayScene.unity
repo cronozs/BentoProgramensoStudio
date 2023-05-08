@@ -1342,7 +1342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mins: {fileID: 1763283028}
   segs: {fileID: 934346271}
-  Tiemp: 100
+  Tiemp: 2
   gameOver: {fileID: 429466974}
 --- !u!114 &910077673
 MonoBehaviour:

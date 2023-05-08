@@ -12,7 +12,7 @@ public class Comercial : MonoBehaviour
    
     public void playAd()
     {
-
+        showPoints.instance.extraScore();
         ad.gameObject.SetActive(true);
         gameOver.gameObject.SetActive(false);
         
@@ -28,5 +28,6 @@ public class Comercial : MonoBehaviour
     public void closeAd()
     {
         ad.gameObject.SetActive(false);
+        scorescreen.gameObject.SetActive(true);
     }
 }
