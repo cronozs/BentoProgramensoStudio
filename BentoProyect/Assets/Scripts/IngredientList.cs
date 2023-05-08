@@ -9,11 +9,12 @@ public class IngredientList : MonoBehaviour
 {
     [SerializeField] private GameObject[] ingredients = new GameObject[3];
     [SerializeField] private Drag_prueba[] ingred = new Drag_prueba[3];
-    [SerializeField] private Image[] show = new Image[3];
+    [SerializeField] public  Image[] show = new Image[3];
     [SerializeField] private Image timer;
     [SerializeField] private GameObject Loose;
     [SerializeField] private Canvas win;
     [SerializeField] private float speed = 10;
+    [SerializeField] private Validation bento;
     //int i = 0;
 
     private float _time;
@@ -21,7 +22,10 @@ public class IngredientList : MonoBehaviour
     private Renderer _renderer;
     private int _selector;
 
-    
+    private void Start()
+    {
+        bento.Reasingnar();
+    }
     void Update()
     {
         MoveX();
@@ -53,6 +57,7 @@ public class IngredientList : MonoBehaviour
     private void OnBecameInvisible()
     {
         CloneClient();
+        bento.canVerify = true;
         Destroy(this.gameObject);
     }
 
@@ -60,7 +65,6 @@ public class IngredientList : MonoBehaviour
     {
         if (other.tag == "order")
         {
-            Debug.Log("enr");
             _time = Time.time;
             speed = 0;
             foreach (var ing in ingred)
