@@ -14,10 +14,8 @@ public class Comercial : MonoBehaviour
     public void playAd()
     {
         showPoints.instance.extraScore();
-        ad.gameObject.SetActive(true);
-        gameOver.gameObject.SetActive(false);
-        
-
+        ad.SetActive(true);
+        gameOver.SetActive(false);
     }
 
     public void returnMenu()
