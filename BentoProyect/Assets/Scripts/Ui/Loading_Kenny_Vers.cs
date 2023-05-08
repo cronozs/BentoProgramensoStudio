@@ -22,7 +22,8 @@ public class Loading_Kenny_Vers : MonoBehaviour
       MScreen.SetActive(false);
       loadingScreen.SetActive(true);
       
-      //yield return new WaitForSeconds(1);
+      yield return new WaitForSeconds(1);
+      SceneManager.LoadSceneAsync(sceneIndex);
       AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
       
       while (!operation.isDone)
