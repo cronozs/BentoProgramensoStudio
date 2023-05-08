@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Comercial : MonoBehaviour
@@ -30,4 +31,5 @@ public class Comercial : MonoBehaviour
         ad.gameObject.SetActive(false);
         scorescreen.gameObject.SetActive(true);
     }
+    
 }
