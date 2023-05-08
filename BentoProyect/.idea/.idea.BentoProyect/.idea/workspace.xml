@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22d57f28-93f4-4356-8310-3564d9823dd9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BentoProyect/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BentoProyect/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Loading_Kenny_Vers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/Loading_Kenny_Vers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/animation_ui.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/animation_ui.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,8 +11,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Comercial.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Loading_Kenny_Vers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/animation_ui.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/showPoints.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -94,6 +95,12 @@
       <workItem from="1680016467204" duration="24000" />
       <workItem from="1680020073580" duration="471000" />
       <workItem from="1682296214215" duration="4014000" />
+      <workItem from="1683043545760" duration="6724000" />
+      <workItem from="1683052635567" duration="19000" />
+      <workItem from="1683090405363" duration="886000" />
+      <workItem from="1683428767310" duration="2083000" />
+      <workItem from="1683432439489" duration="2203000" />
+      <workItem from="1683565181740" duration="3647000" />
     </task>
     <servers />
   </component>

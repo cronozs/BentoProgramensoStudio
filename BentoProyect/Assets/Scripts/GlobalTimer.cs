@@ -6,6 +6,7 @@ public class GlobalTimer : MonoBehaviour
     public Text mins;
     public Text segs;
     public float Tiemp;
+    public GameObject gameOver;
    
   
 
@@ -38,12 +39,16 @@ public class GlobalTimer : MonoBehaviour
             segs.text = "" + segundos.ToString("") ;
         }
 
-            
-            
-        
-            
-        
-        
+
+        if (Tiemp == 0)
+        {
+            Time.timeScale = 0f;
+            gameOver.gameObject.SetActive(true);
+        }
+
+
+
+
     }
 
 

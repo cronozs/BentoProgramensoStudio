@@ -21,6 +21,7 @@ public class IngredientList : MonoBehaviour
     private float _actualTime;
     private Renderer _renderer;
     private int _selector;
+    
 
     private void Start()
     {
