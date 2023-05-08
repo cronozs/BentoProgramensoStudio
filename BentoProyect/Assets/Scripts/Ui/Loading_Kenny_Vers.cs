@@ -19,9 +19,12 @@ public class Loading_Kenny_Vers : MonoBehaviour
 
    IEnumerator LoadAsync(int sceneIndex)
    {
-      AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
       MScreen.SetActive(false);
       loadingScreen.SetActive(true);
+      
+      yield return new WaitForSeconds(1);
+      AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
+      
       while (!operation.isDone)
       {
          float progress = Mathf.Clamp01(operation.progress / .9f);

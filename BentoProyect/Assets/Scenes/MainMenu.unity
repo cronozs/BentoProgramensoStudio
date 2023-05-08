@@ -426,7 +426,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -548,7 +548,6 @@ GameObject:
   - component: {fileID: 563321419}
   - component: {fileID: 563321418}
   - component: {fileID: 563321417}
-  - component: {fileID: 563321416}
   m_Layer: 5
   m_Name: Loading
   m_TagString: Untagged
@@ -556,26 +555,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!95 &563321416
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 563321415}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c2d6f381d2ae42a46aa5125460ebbbb6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &563321417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -840,7 +819,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6506e59a6d300f488a57e7a7dbb808e, type: 3}
   - {fileID: 21300000, guid: 77a3e4784ba49124890dda59f88e8cb0, type: 3}
   - {fileID: 21300000, guid: 4f6da50f8aa31954fae669e0ede0b655, type: 3}
-  spritePerFrame: 10
+  spritePerFrame: 100
   loop: 1
   destroyOnEnd: 0
 --- !u!114 &720844229
@@ -863,7 +842,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 4f6da50f8aa31954fae669e0ede0b655, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1386,7 +1365,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 61b390b234b4bf64c867a88d9f12e5f2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.354
+  m_Volume: 0.665
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1519,7 +1498,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1590,7 +1569,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ed024639c6a1c4e4d9d1b1f772b17b78, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.517
   m_Pitch: 1
   Loop: 0
   Mute: 0
