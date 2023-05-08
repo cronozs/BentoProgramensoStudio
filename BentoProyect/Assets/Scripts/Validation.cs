@@ -11,7 +11,7 @@ public class Validation : MonoBehaviour
     [SerializeField] private GameObject canvalosse;
     [SerializeField] private Box[] orderZones = new Box[3];
     [SerializeField] private IngredientList player;
-    private bool verify;
+    private bool verify = true;
     public bool canVerify = true;
     public bool canValidate = true;
 
@@ -61,6 +61,7 @@ public class Validation : MonoBehaviour
         {
             canvaWin.SetActive(true);
             StartCoroutine(Gone(canvaWin));
+            showPoints.instance.addScore();
             canVerify = false;
         }
         else
