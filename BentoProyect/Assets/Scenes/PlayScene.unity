@@ -1027,7 +1027,6 @@ GameObject:
   - component: {fileID: 509239583}
   - component: {fileID: 509239582}
   - component: {fileID: 509239581}
-  - component: {fileID: 509239584}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -1100,9 +1099,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 509239579}
+      - m_Target: {fileID: 635681689}
         m_TargetAssemblyTypeName: Comercial, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: menu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1150,21 +1149,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 509239579}
   m_CullTransparentMesh: 1
---- !u!114 &509239584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 509239579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cdcf8d9d116ece47aab55b335b56c14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loadingScreen: {fileID: 0}
-  MScreen: {fileID: 0}
-  slider: {fileID: 0}
 --- !u!1 &549930476
 GameObject:
   m_ObjectHideFlags: 0

@@ -31,5 +31,9 @@ public class Comercial : MonoBehaviour
         ad.gameObject.SetActive(false);
         scorescreen.gameObject.SetActive(true);
     }
-    
+
+    public void menu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
