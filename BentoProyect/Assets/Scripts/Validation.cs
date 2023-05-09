@@ -29,10 +29,10 @@ public class Validation : MonoBehaviour
         {
             if (areas[0].tag != "DropArea" && areas[1].tag != "DropArea" && areas[2].tag != "DropArea")
             {
-                for (int i = 0; i < peticiones.Length; i++)
+                for (int i = 0; i < peticiones.Length -1; i++)
                 {
                     bool match = false;
-                    for (int j = 0; j < areas.Length; j++)
+                    for (int j = 0; j < areas.Length-1; j++)
                     {
                         if (peticiones[i].tag == areas[j].tag)
                         {

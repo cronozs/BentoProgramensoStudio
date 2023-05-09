@@ -15,6 +15,8 @@ public class IngredientList : MonoBehaviour
     [SerializeField] private Canvas win;
     [SerializeField] private float speed = 10;
     [SerializeField] private Validation bento;
+    [SerializeField] public Box[] boxes = new Box[3];
+
     //int i = 0;
 
     private float _time;
@@ -59,6 +61,7 @@ public class IngredientList : MonoBehaviour
     {
         CloneClient();
         bento.canVerify = true;
+        bento.canValidate = true;
         Destroy(this.gameObject);
     }
 
@@ -68,10 +71,18 @@ public class IngredientList : MonoBehaviour
         {
             _time = Time.time;
             speed = 0;
-            foreach (var ing in ingred)
+            for(int i = 0; i<ingred.Length-1; i++)
             {
-                ing.orden = show[0].gameObject;
+                ingred[i].orden = show[i].gameObject;
             }
+            /*foreach (var zone in boxes)
+            {
+                zone.canDes = true;
+            }
+            foreach (var area in boxes)
+            {
+                area.tag = "DropArea";
+            }*/
             ChoseIngredients();
         }
     }
@@ -110,6 +121,14 @@ public class IngredientList : MonoBehaviour
         {
             Loose.SetActive(true);
             StartCoroutine(ShowCanva());
+            /*foreach (var zone in boxes)
+            {
+                zone.canDes = true;
+            }
+            foreach (var area in boxes)
+            {
+                area.tag = "DropArea";
+            }*/
         }
     }
 
