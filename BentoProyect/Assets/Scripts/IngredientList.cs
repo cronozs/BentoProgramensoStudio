@@ -9,65 +9,46 @@ public class IngredientList : MonoBehaviour
 {
     [SerializeField] private GameObject[] ingredients = new GameObject[3];
     [SerializeField] private Drag_prueba[] ingred = new Drag_prueba[3];
-    [SerializeField] private Image show;
+    [SerializeField] public  Image[] show = new Image[3];
     [SerializeField] private Image timer;
     [SerializeField] private GameObject Loose;
     [SerializeField] private Canvas win;
     [SerializeField] private float speed = 10;
+    [SerializeField] private Validation bento;
+    [SerializeField] public Box[] boxes = new Box[3];
+
     //int i = 0;
 
-    private bool _stop = true;
     private float _time;
     private float _actualTime;
-    private float _actualfil;
     private Renderer _renderer;
     private int _selector;
     
 
     private void Start()
     {
-        _stop = true;
+        bento.Reasingnar();
+        MoveX();
     }
-    // Update is called once per frame
     void Update()
     {
-        Timer();
+        MoveX();
     }
 
     private void ChoseIngredients()
     {
-        _selector = Random.Range(0, ingredients.Length);
-        _renderer = ingredients[_selector].GetComponent<Renderer>();
-        show.tag = ingredients[_selector].tag;
-        show.material = _renderer.material;
-    }
-
-    private void Timer()
-    {
-        _actualTime = Time.time - _time;
-        float fill = _actualTime / 10;
-        fill = (1 - fill) + 0;
-        timer.fillAmount = fill;
-        speed = 10;
-        if (_actualTime <= 10)
+        foreach (var sho in show)
         {
-            _actualfil = Time.time + _time;
-            Win();
-        }
-        else if (_actualTime >= 10 && _actualTime <= 10.4f)
-        {
-            Loose.SetActive(true);
-            MoveX();
-        }
-        else
-        {
-            StartCoroutine(ShowCanva());
-            MoveX();
+            _selector = Random.Range(0, ingredients.Length);
+            _renderer = ingredients[_selector].GetComponent<Renderer>();
+            sho.tag = ingredients[_selector].tag;
+            sho.material = _renderer.material;
         }
     }
 
     IEnumerator ShowCanva()
     {
+        speed = 10;
         yield return new WaitForSeconds(1.2f);
         Loose.SetActive(false);
     }
@@ -79,54 +60,79 @@ public class IngredientList : MonoBehaviour
 
     private void OnBecameInvisible()
     {
-        StopCoroutine(Salida());
-        //this.gameObject.SetActive(false);
         CloneClient();
-        _actualTime = 11;
+        bento.canVerify = true;
+        bento.canValidate = true;
         Destroy(this.gameObject);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-
-            Debug.Log("enr");
-            _time = _actualTime;
-            this.transform.Translate(0, 0, 0);
-            foreach (var ing in ingred)
+        if (other.tag == "order")
+        {
+            _time = Time.time;
+            speed = 0;
+            for(int i = 0; i<ingred.Length-1; i++)
             {
-                ing.orden = show.gameObject;
+                ingred[i].orden = show[i].gameObject;
             }
+            bento.canValidate = true;
+            /*foreach (var zone in boxes)
+            {
+                zone.canDes = true;
+            }
+            foreach (var area in boxes)
+            {
+                area.tag = "DropArea";
+            }*/
             ChoseIngredients();
-            _stop = false;
+        }
     }
 
     private void CloneClient()
     {
         timer.fillAmount = 0;
-        show.material = null;
+        foreach (var sho in show)
+        {
+            sho.material = null;
+        }
         this.transform.position = new Vector3(-15, 5, 5);
         if (!this.gameObject.scene.isLoaded) return;
         Instantiate(this.gameObject);
-        MoveX();
     }
 
     private void Win()
     {
         if (win.gameObject.activeInHierarchy == true || Loose.activeInHierarchy == true)
         {
-            speed = 0.08f;
-            timer.fillAmount = _actualfil;
-            StartCoroutine(Salida());
+            speed = 10;
         }
     }
 
-    private IEnumerator Salida()
+    private void OnTriggerStay(Collider other)
     {
-        while (true)
+        _actualTime = Time.time - _time;
+        float fill = _actualTime / 10;
+        fill = (1 - fill) + 0;
+        timer.fillAmount = fill;
+        if (_actualTime <= 10)
         {
-            MoveX();
-            _time = _actualTime;
-            yield return null;
+            Win();
+        }
+        else
+        {
+            Loose.SetActive(true);
+            StartCoroutine(ShowCanva());
+            /*foreach (var zone in boxes)
+            {
+                zone.canDes = true;
+            }
+            foreach (var area in boxes)
+            {
+                area.tag = "DropArea";
+            }*/
         }
     }
+
+
 }

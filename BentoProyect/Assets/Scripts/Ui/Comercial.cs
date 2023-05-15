@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Comercial : MonoBehaviour
@@ -12,11 +13,9 @@ public class Comercial : MonoBehaviour
    
     public void playAd()
     {
-
-        ad.gameObject.SetActive(true);
-        gameOver.gameObject.SetActive(false);
-        
-
+        showPoints.instance.extraScore();
+        ad.SetActive(true);
+        gameOver.SetActive(false);
     }
 
     public void returnMenu()
@@ -28,5 +27,11 @@ public class Comercial : MonoBehaviour
     public void closeAd()
     {
         ad.gameObject.SetActive(false);
+        scorescreen.gameObject.SetActive(true);
+    }
+
+    public void menu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

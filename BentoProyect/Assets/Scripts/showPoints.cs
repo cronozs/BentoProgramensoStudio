@@ -9,6 +9,7 @@ public class showPoints : MonoBehaviour
     public static showPoints instance;
     public float points = 0;
     public Text Puntaje;
+    public Text Final;
 
     private void Awake()
     {
@@ -24,5 +25,12 @@ public class showPoints : MonoBehaviour
     {
         points += 1;
         Puntaje.text =  "$" + points.ToString();
+        Final.text = "$" + points.ToString() + " en propinas";
+    }
+
+    public void extraScore()
+    {
+        points += 10;
+        Final.text = "$" + points.ToString() + " en propinas";
     }
 }
