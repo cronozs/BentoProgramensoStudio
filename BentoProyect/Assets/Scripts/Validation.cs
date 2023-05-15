@@ -68,6 +68,8 @@ public class Validation : MonoBehaviour
         foreach (var area in orderZones)
         {
             area.tag = "DropArea";
+            var col = area.GetComponent<BoxCollider>();
+            col.enabled = false;
         }
         canValidate = true;
     }

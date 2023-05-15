@@ -76,15 +76,12 @@ public class IngredientList : MonoBehaviour
             {
                 ingred[i].orden = show[i].gameObject;
             }
-            bento.canValidate = true;
-            /*foreach (var zone in boxes)
-            {
-                zone.canDes = true;
-            }
             foreach (var area in boxes)
             {
+                var col = area.GetComponent<BoxCollider>();
+                col.enabled = true;
                 area.tag = "DropArea";
-            }*/
+            }
             ChoseIngredients();
         }
     }
