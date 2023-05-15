@@ -28,6 +28,7 @@ public class IngredientList : MonoBehaviour
     private void Start()
     {
         bento.Reasingnar();
+        MoveX();
     }
     void Update()
     {
@@ -75,6 +76,7 @@ public class IngredientList : MonoBehaviour
             {
                 ingred[i].orden = show[i].gameObject;
             }
+            bento.canValidate = true;
             /*foreach (var zone in boxes)
             {
                 zone.canDes = true;

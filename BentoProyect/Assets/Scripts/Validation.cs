@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Validation : MonoBehaviour
 {
-    [SerializeField] private GameObject[] areas = new GameObject[3];
     [SerializeField] private GameObject[] peticiones = new GameObject[3];
     [SerializeField] private GameObject canvaWin;
     [SerializeField] private GameObject canvalosse;
@@ -27,25 +26,10 @@ public class Validation : MonoBehaviour
     {
         if (canValidate)
         {
-            if (areas[0].tag != "DropArea" && areas[1].tag != "DropArea" && areas[2].tag != "DropArea")
+            if (orderZones[0].tag != "DropArea" && orderZones[1].tag != "DropArea" && orderZones[2].tag != "DropArea")
             {
-                for (int i = 0; i < peticiones.Length -1; i++)
-                {
-                    bool match = false;
-                    for (int j = 0; j < areas.Length-1; j++)
-                    {
-                        if (peticiones[i].tag == areas[j].tag)
-                        {
-                            match = true;
-                        }
-                    }
-                    Debug.Log(match);
-                    if (!match)
-                    {
-                        verify = false;
-                    }
-
-                }
+                if (peticiones[0].tag != orderZones[0].tag || peticiones[1].tag != orderZones[1].tag || peticiones[2].tag != orderZones[2].tag)
+                    verify = false;
                 if (canVerify) Ver();
 
                 canValidate = false;
@@ -81,7 +65,7 @@ public class Validation : MonoBehaviour
         {
             zone.canDes = true;
         }
-        foreach (var area in areas)
+        foreach (var area in orderZones)
         {
             area.tag = "DropArea";
         }
