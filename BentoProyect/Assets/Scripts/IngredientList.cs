@@ -17,6 +17,7 @@ public class IngredientList : MonoBehaviour
     [SerializeField] private float speed = 10;
     [SerializeField] private Validation bento;
     [SerializeField] public Box[] boxes = new Box[3];
+    
 
     //int i = 0;
 

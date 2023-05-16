@@ -14,6 +14,7 @@ public class Drag_prueba : MonoBehaviour
     private GameObject copia;
     public GameObject cliente;
     public Sprite enojada;
+    public AudioSource plop;
 
     [SerializeField] private IngredientList cylinder;
     
@@ -41,6 +42,7 @@ public class Drag_prueba : MonoBehaviour
             {
                 copia.transform.position = hitInfo.transform.position;
                 hitInfo.transform.tag = gameObject.transform.tag;
+                plop.Play();
                 //Verificar();
             }
             else
