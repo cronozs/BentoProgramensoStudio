@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22d57f28-93f4-4356-8310-3564d9823dd9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/sprites_change.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/sprites_change.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +107,7 @@
       <workItem from="1683428767310" duration="2083000" />
       <workItem from="1683432439489" duration="2203000" />
       <workItem from="1683565181740" duration="3647000" />
-      <workItem from="1684259919065" duration="2642000" />
+      <workItem from="1684259919065" duration="2943000" />
     </task>
     <servers />
   </component>
