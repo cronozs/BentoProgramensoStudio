@@ -64,13 +64,11 @@ public class Validation : MonoBehaviour
         foreach(var zone in orderZones)
         {
             zone.canDes = true;
-        }
-        foreach (var area in orderZones)
-        {
-            area.tag = "DropArea";
-            var col = area.GetComponent<BoxCollider>();
+            zone.tag = "DropArea";
+            var col = zone.GetComponent<BoxCollider>();
             col.enabled = false;
         }
+        
         canValidate = true;
     }
 
