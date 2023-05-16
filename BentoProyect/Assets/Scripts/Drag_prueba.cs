@@ -14,13 +14,14 @@ public class Drag_prueba : MonoBehaviour
     private GameObject copia;
     public GameObject cliente;
     public Sprite enojada;
+    public AudioSource plop;
 
     [SerializeField] private IngredientList cylinder;
     
 
     void OnMouseDown()
     {
-        copia = Instantiate(gameObject,transform.position,Quaternion.identity);
+        copia = Instantiate(gameObject);
         offset = transform.position - MouseWorldPosition();
         transform.GetComponent<Collider>().enabled = false;
     }
@@ -41,6 +42,7 @@ public class Drag_prueba : MonoBehaviour
             {
                 copia.transform.position = hitInfo.transform.position;
                 hitInfo.transform.tag = gameObject.transform.tag;
+                plop.Play();
                 //Verificar();
             }
             else

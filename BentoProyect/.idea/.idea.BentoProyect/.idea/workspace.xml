@@ -17,7 +17,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Comercial.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Loading_Kenny_Vers.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/PauseAndPlay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/animation_ui.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/showPoints.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Videos/Creds.cs" root0="FORCE_HIGHLIGHTING" />
@@ -111,7 +110,7 @@
       <workItem from="1683428767310" duration="2083000" />
       <workItem from="1683432439489" duration="2203000" />
       <workItem from="1683565181740" duration="3647000" />
-      <workItem from="1684274895518" duration="2867000" />
+      <workItem from="1684259919065" duration="2642000" />
     </task>
     <servers />
   </component>

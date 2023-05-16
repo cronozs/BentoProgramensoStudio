@@ -10,7 +10,13 @@ public class sprites_change : MonoBehaviour
     public Sprite feliz;
     public Canvas lose;
     public Canvas win;
-    
+    public ParticleSystem winPs;
+
+    private void Start()
+    {
+        winPs.Stop();
+    }
+
     private void Update()
     {
         if (lose.isActiveAndEnabled)
@@ -22,17 +28,17 @@ public class sprites_change : MonoBehaviour
 
         if (win.isActiveAndEnabled)
         {
+            winPs.Play();
             gameObject.GetComponent<SpriteRenderer>().sprite = feliz;
             StartCoroutine(Default());
-            
+
         }
 
     }
 
     IEnumerator Default()
     {
-        yield return new WaitForSeconds(1);
-        Debug.Log("cambio");
+        yield return new WaitForSeconds(2);
         gameObject.GetComponent<SpriteRenderer>().sprite = normal;
     }
 }
