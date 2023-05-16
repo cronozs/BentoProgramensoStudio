@@ -35,7 +35,7 @@ public class Comercial : MonoBehaviour
         ad.gameObject.SetActive(false);
         scorescreen.gameObject.SetActive(true);
         timer.SetActive(false);
-        puntaje.SetActive(false);
+        puntaje.SetActive(true);
     }
 
     public void menu()
