@@ -123,6 +123,134 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &9228937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9228939}
+  - component: {fileID: 9228938}
+  m_Layer: 0
+  m_Name: Plop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &9228938
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9228937}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5f4a70e9f4907d54ebaba939f038b6fb, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &9228939
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9228937}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.20182061, y: 0.00455305, z: -4.53683}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &10128563
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,6 +782,7 @@ MonoBehaviour:
   canvaLose: {fileID: 417393831}
   cliente: {fileID: 1777696265}
   enojada: {fileID: 21300000, guid: 1383331345fdd1f4c95a49af828d91dc, type: 3}
+  plop: {fileID: 0}
   cylinder: {fileID: 0}
 --- !u!54 &98860441
 Rigidbody:
@@ -1770,6 +1899,7 @@ MonoBehaviour:
   canvaLose: {fileID: 417393831}
   cliente: {fileID: 1777696265}
   enojada: {fileID: 21300000, guid: 1383331345fdd1f4c95a49af828d91dc, type: 3}
+  plop: {fileID: 0}
   cylinder: {fileID: 383066286236365045}
 --- !u!65 &463086707
 BoxCollider:
@@ -3710,6 +3840,7 @@ MonoBehaviour:
   canvaLose: {fileID: 417393831}
   cliente: {fileID: 0}
   enojada: {fileID: 0}
+  plop: {fileID: 0}
   cylinder: {fileID: 0}
 --- !u!54 &915269130
 Rigidbody:
@@ -5036,6 +5167,7 @@ MonoBehaviour:
   canvaLose: {fileID: 417393831}
   cliente: {fileID: 0}
   enojada: {fileID: 0}
+  plop: {fileID: 0}
   cylinder: {fileID: 0}
 --- !u!54 &1194658008
 Rigidbody:
@@ -5460,6 +5592,7 @@ MonoBehaviour:
   canvaLose: {fileID: 417393831}
   cliente: {fileID: 1777696265}
   enojada: {fileID: 21300000, guid: 1383331345fdd1f4c95a49af828d91dc, type: 3}
+  plop: {fileID: 62365951}
   cylinder: {fileID: 383066286236365045}
 --- !u!1 &1402315553 stripped
 GameObject:
@@ -6451,6 +6584,7 @@ MonoBehaviour:
   feliz: {fileID: 21300000, guid: 69d62f50d4105a548b21eb294a5a05de, type: 3}
   lose: {fileID: 417393834}
   win: {fileID: 1077827522}
+  winPs: {fileID: 0}
 --- !u!1 &1790329295
 GameObject:
   m_ObjectHideFlags: 0
@@ -7169,6 +7303,7 @@ MonoBehaviour:
   canvaLose: {fileID: 417393831}
   cliente: {fileID: 1777696265}
   enojada: {fileID: 21300000, guid: 69d62f50d4105a548b21eb294a5a05de, type: 3}
+  plop: {fileID: 62365951}
   cylinder: {fileID: 383066286236365045}
 --- !u!54 &1993271811
 Rigidbody:
