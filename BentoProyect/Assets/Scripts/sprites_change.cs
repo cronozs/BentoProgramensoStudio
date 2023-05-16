@@ -31,15 +31,14 @@ public class sprites_change : MonoBehaviour
             winPs.Play();
             gameObject.GetComponent<SpriteRenderer>().sprite = feliz;
             StartCoroutine(Default());
-            
+
         }
 
     }
 
     IEnumerator Default()
     {
-        yield return new WaitForSeconds(1);
-        Debug.Log("cambio");
+        yield return new WaitForSeconds(2);
         gameObject.GetComponent<SpriteRenderer>().sprite = normal;
     }
 }
