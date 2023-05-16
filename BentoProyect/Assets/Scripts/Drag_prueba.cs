@@ -20,7 +20,7 @@ public class Drag_prueba : MonoBehaviour
 
     void OnMouseDown()
     {
-        copia = Instantiate(gameObject,transform.position,Quaternion.identity);
+        copia = Instantiate(gameObject);
         offset = transform.position - MouseWorldPosition();
         transform.GetComponent<Collider>().enabled = false;
     }
