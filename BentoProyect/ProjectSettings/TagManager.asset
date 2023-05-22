@@ -9,6 +9,9 @@ TagManager:
   - Azul
   - DropArea
   - order
+  - Huevo
+  - Salchicha
+  - Onigiri
   layers:
   - Default
   - TransparentFX

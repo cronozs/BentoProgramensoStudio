@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Box : MonoBehaviour
 {
-    public bool can;
     public bool canDes = false;
 
     public void OnTriggerStay(Collider other)

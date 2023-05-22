@@ -8,6 +8,7 @@ using UnityEditor;
 public class IngredientList : MonoBehaviour
 {
     [SerializeField] private GameObject[] ingredients = new GameObject[3];
+    [SerializeField] private Sprite[] imagenesShow = new Sprite[3];
     [SerializeField] private Drag_prueba[] ingred = new Drag_prueba[3];
     [SerializeField] public  Image[] show = new Image[3];
     [SerializeField] private Image timer;
@@ -43,7 +44,7 @@ public class IngredientList : MonoBehaviour
             _selector = Random.Range(0, ingredients.Length);
             _renderer = ingredients[_selector].GetComponent<Renderer>();
             sho.tag = ingredients[_selector].tag;
-            sho.material = _renderer.material;
+            sho.sprite = imagenesShow[_selector];
         }
     }
 
@@ -77,15 +78,12 @@ public class IngredientList : MonoBehaviour
             {
                 ingred[i].orden = show[i].gameObject;
             }
-            bento.canValidate = true;
-            /*foreach (var zone in boxes)
-            {
-                zone.canDes = true;
-            }
             foreach (var area in boxes)
             {
+                var col = area.GetComponent<BoxCollider>();
+                col.enabled = true;
                 area.tag = "DropArea";
-            }*/
+            }
             ChoseIngredients();
         }
     }
@@ -95,7 +93,7 @@ public class IngredientList : MonoBehaviour
         timer.fillAmount = 0;
         foreach (var sho in show)
         {
-            sho.material = null;
+            sho.sprite = null;
         }
         this.transform.position = new Vector3(-15, 5, 5);
         if (!this.gameObject.scene.isLoaded) return;
