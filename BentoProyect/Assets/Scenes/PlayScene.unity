@@ -10373,8 +10373,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 3.9456003, z: 2.8561294}
-  m_Center: {x: 0, y: 1.0370566, z: -0.21625698}
+  m_Size: {x: 1.8470396, y: 3.9456003, z: 2.8561294}
+  m_Center: {x: 0.4235198, y: 1.0370566, z: -0.21625698}
 --- !u!4 &1382563358
 Transform:
   m_ObjectHideFlags: 0
@@ -12712,7 +12712,7 @@ PrefabInstance:
       objectReference: {fileID: 1521680155}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: winPs
@@ -12722,6 +12722,10 @@ PrefabInstance:
       propertyPath: Client
       value: 
       objectReference: {fileID: 6946193308959565326, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
+    - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
+      propertyPath: monaSpeed
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: show.Array.size
       value: 3

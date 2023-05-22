@@ -14,7 +14,8 @@ public class IngredientList : MonoBehaviour
     [SerializeField] private Image timer;
     [SerializeField] private GameObject Loose;
     [SerializeField] private Canvas win;
-    [SerializeField] private float speed = 10;
+    [SerializeField] private float speed;
+    [SerializeField] private float monaSpeed;
     [SerializeField] private Validation bento;
     [SerializeField] public Box[] boxes = new Box[3];
     
@@ -50,7 +51,7 @@ public class IngredientList : MonoBehaviour
 
     IEnumerator ShowCanva()
     {
-        speed = 10;
+        speed = monaSpeed;
         yield return new WaitForSeconds(1.2f);
         Loose.SetActive(false);
     }
@@ -104,7 +105,7 @@ public class IngredientList : MonoBehaviour
     {
         if (win.gameObject.activeInHierarchy == true || Loose.activeInHierarchy == true)
         {
-            speed = 10;
+            speed = monaSpeed;
         }
     }
 
