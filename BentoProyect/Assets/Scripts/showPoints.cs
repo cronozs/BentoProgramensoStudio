@@ -10,10 +10,24 @@ public class showPoints : MonoBehaviour
     public float points = 0;
     public Text Puntaje;
     public Text Final;
+    public GameObject boton;
 
     private void Awake()
     {
         instance = this;
+    }
+
+    public void Update()
+    {
+        if (points < 10)
+        {
+            
+            boton.SetActive(false);
+        }
+        else
+        {
+            boton.SetActive(true);
+        }
     }
 
     private void Start()
@@ -26,6 +40,7 @@ public class showPoints : MonoBehaviour
         points += 1;
         Puntaje.text =  "$" + points.ToString();
         Final.text = "$" + points.ToString() + " en propinas";
+
     }
 
     public void extraScore()
