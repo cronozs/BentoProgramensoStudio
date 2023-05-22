@@ -11,6 +11,7 @@ public class showPoints : MonoBehaviour
     public Text Puntaje;
     public Text Final;
     public GameObject boton;
+    [SerializeField] private IngredientList multy;
 
     private void Awake()
     {
@@ -37,7 +38,9 @@ public class showPoints : MonoBehaviour
 
     public void addScore()
     {
-        points += 1;
+        multy = FindObjectOfType<IngredientList>();
+        points += (multy.fill * 5);
+        points = Mathf.Round(points * 10f) / 10f;
         Puntaje.text =  "$" + points.ToString();
         Final.text = "$" + points.ToString() + " en propinas";
 

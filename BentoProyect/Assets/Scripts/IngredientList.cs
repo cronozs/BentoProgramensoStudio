@@ -18,13 +18,14 @@ public class IngredientList : MonoBehaviour
     [SerializeField] private float monaSpeed;
     [SerializeField] private Validation bento;
     [SerializeField] public Box[] boxes = new Box[3];
+    public float fill = 0;
+    
     
 
     //int i = 0;
 
     private float _time;
     private float _actualTime;
-    private Renderer _renderer;
     private int _selector;
     
 
@@ -43,7 +44,6 @@ public class IngredientList : MonoBehaviour
         foreach (var sho in show)
         {
             _selector = Random.Range(0, ingredients.Length);
-            _renderer = ingredients[_selector].GetComponent<Renderer>();
             sho.tag = ingredients[_selector].tag;
             sho.sprite = imagenesShow[_selector];
         }
@@ -112,7 +112,7 @@ public class IngredientList : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         _actualTime = Time.time - _time;
-        float fill = _actualTime / 10;
+        fill = _actualTime / 10;
         fill = (1 - fill) + 0;
         timer.fillAmount = fill;
         if (_actualTime <= 10)
