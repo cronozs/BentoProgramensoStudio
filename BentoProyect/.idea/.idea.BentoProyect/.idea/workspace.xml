@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="22d57f28-93f4-4356-8310-3564d9823dd9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BentoProyect/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BentoProyect/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Comercial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/Comercial.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/showPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/showPoints.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +108,8 @@
       <workItem from="1683432439489" duration="2203000" />
       <workItem from="1683565181740" duration="3647000" />
       <workItem from="1684259919065" duration="2943000" />
-      <workItem from="1684776572564" duration="987000" />
+      <workItem from="1684776572564" duration="1390000" />
+      <workItem from="1684778400799" duration="668000" />
     </task>
     <servers />
   </component>
