@@ -18,6 +18,7 @@ public class IngredientList : MonoBehaviour
     [SerializeField] private float monaSpeed;
     [SerializeField] private Validation bento;
     [SerializeField] public Box[] boxes = new Box[3];
+    [SerializeField] private float canvaTime;
     public float fill = 0;
     
     
@@ -52,7 +53,7 @@ public class IngredientList : MonoBehaviour
     IEnumerator ShowCanva()
     {
         speed = monaSpeed;
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(canvaTime);
         Loose.SetActive(false);
     }
 

@@ -26,6 +26,7 @@ public class Loading_Kenny_Vers : MonoBehaviour
       //yield return new WaitForSeconds(1);
       Debug.Log("cargando");
       AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
+        Time.timeScale = 1;
       Debug.Log("este boton si sirve");
       
       while (!operation.isDone)

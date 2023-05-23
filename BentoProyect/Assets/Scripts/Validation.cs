@@ -80,4 +80,5 @@ public class Validation : MonoBehaviour
             peticiones[i] = player.show[i].gameObject;
         }
     }
+
 }
