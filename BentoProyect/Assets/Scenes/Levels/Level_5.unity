@@ -9013,7 +9013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mins: {fileID: 1763283028}
   segs: {fileID: 934346271}
-  Tiemp: 1
+  Tiemp: 120
   gameOver: {fileID: 1192646934}
 --- !u!114 &910077673
 MonoBehaviour:
@@ -9855,7 +9855,7 @@ MonoBehaviour:
   Final: {fileID: 1334719446}
   boton: {fileID: 2063947653}
   multy: {fileID: 383066286236365045}
-  pointsToWin: 1
+  pointsToWin: 60
 --- !u!222 &1067702066
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12655,7 +12655,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &1962396105
 MonoBehaviour:
   m_ObjectHideFlags: 0
