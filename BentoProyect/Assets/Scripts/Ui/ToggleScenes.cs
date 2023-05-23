@@ -1,53 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
+
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
- using UnityEngine.SceneManagement;
+
 
 public class ToggleScenes : MonoBehaviour
 {
-    
-   public void RandomGameplay()
-    {
-        SceneManager.LoadScene("PlayScene");
-    }
-    
-   public void Menu()
-    {
-        SceneManager.LoadScene("MainMenu");
-    }
-    public void LevelMenu()
-    {
-        SceneManager.LoadScene("LevelMenu");
-    }
+    [SerializeField] public GameObject lastCanvas;
 
-    public void Settings()
-   {
-       SceneManager.LoadScene("Settings");
-   }
-
-    public void Level_1()
+    public void LastCanvas()
     {
-        SceneManager.LoadScene("Level_1");
+        lastCanvas.SetActive(true);
     }
-    public void Level_2()
-    {
-        SceneManager.LoadScene("Level_2");
-    }
-
-    public void Level_3()
-    {
-        SceneManager.LoadScene("Level_3");
-    }
-
-    public void Level_4()
-    {
-        SceneManager.LoadScene("Level_4");
-    }
-    public void Level_5()
-    {
-        SceneManager.LoadScene("Level_5");
-    }
-
-
-
 }

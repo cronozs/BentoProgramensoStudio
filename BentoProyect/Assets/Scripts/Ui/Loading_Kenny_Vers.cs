@@ -12,6 +12,7 @@ public class Loading_Kenny_Vers : MonoBehaviour
    public GameObject MScreen;
    public Slider slider; 
    
+   
    public void LoadLevel(int sceneIndex)
    {
       StartCoroutine(LoadAsync(sceneIndex));
