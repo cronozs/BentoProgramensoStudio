@@ -11,6 +11,7 @@ public class sprites_change : MonoBehaviour
     public Canvas lose;
     public Canvas win;
     public ParticleSystem winPs;
+    public float monacambio=1;
 
     private void Start()
     {
@@ -38,7 +39,7 @@ public class sprites_change : MonoBehaviour
 
     IEnumerator Default()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(monacambio);
         gameObject.GetComponent<SpriteRenderer>().sprite = normal;
     }
 }

@@ -515,7 +515,7 @@ AudioSource:
   m_GameObject: {fileID: 62365950}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 121786276609491343, guid: 0b98596a6d9ccbb42a8af4bd079be52f, type: 2}
   m_audioClip: {fileID: 8300000, guid: abbc6a4315d82174480f735d88f5ed77, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.392
@@ -10031,7 +10031,7 @@ AudioSource:
   m_GameObject: {fileID: 1094119102}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -5927164726776938627, guid: 0b98596a6d9ccbb42a8af4bd079be52f, type: 2}
   m_audioClip: {fileID: 8300000, guid: 5f4a70e9f4907d54ebaba939f038b6fb, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -11156,6 +11156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1524679604}
   - component: {fileID: 1524679605}
+  - component: {fileID: 1524679606}
   m_Layer: 5
   m_Name: Slider SFX
   m_TagString: Untagged
@@ -11230,13 +11231,38 @@ MonoBehaviour:
   m_FillRect: {fileID: 438971840}
   m_HandleRect: {fileID: 1020629694}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1524679606}
+        m_TargetAssemblyTypeName: Volumen_Control, Assembly-CSharp
+        m_MethodName: AudioV
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1524679606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524679603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45358e676f92ae14fabaca4fe5cbd2ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Mixer: {fileID: 24100000, guid: 0b98596a6d9ccbb42a8af4bd079be52f, type: 2}
 --- !u!1 &1555774024
 GameObject:
   m_ObjectHideFlags: 0
@@ -12036,6 +12062,7 @@ MonoBehaviour:
   lose: {fileID: 417393834}
   win: {fileID: 1077827522}
   winPs: {fileID: 150076005}
+  monacambio: 1
 --- !u!1 &1790329295
 GameObject:
   m_ObjectHideFlags: 0
@@ -12982,6 +13009,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1997598513}
   - component: {fileID: 1997598514}
+  - component: {fileID: 1997598515}
   m_Layer: 5
   m_Name: Slider Volume
   m_TagString: Untagged
@@ -13056,13 +13084,38 @@ MonoBehaviour:
   m_FillRect: {fileID: 10128564}
   m_HandleRect: {fileID: 292309638}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1997598515}
+        m_TargetAssemblyTypeName: Volumen_Control, Assembly-CSharp
+        m_MethodName: Audio
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1997598515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997598512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45358e676f92ae14fabaca4fe5cbd2ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Mixer: {fileID: 24100000, guid: 0b98596a6d9ccbb42a8af4bd079be52f, type: 2}
 --- !u!1 &2063947653
 GameObject:
   m_ObjectHideFlags: 0
@@ -13619,7 +13672,7 @@ PrefabInstance:
       objectReference: {fileID: 6946193308959565326, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: monaSpeed
-      value: 12
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: show.Array.size
