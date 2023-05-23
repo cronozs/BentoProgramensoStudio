@@ -10,7 +10,7 @@ public class Volumen_Control : MonoBehaviour
 
     public void Audio(float sliderVal)
     {
-        Mixer.SetFloat("Vol", Mathf.Log10(sliderVal)*20);
+        Mixer.SetFloat("BGM", Mathf.Log10(sliderVal)*20);
     }
     
     public void AudioV(float sliderVal)
