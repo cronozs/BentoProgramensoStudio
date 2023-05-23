@@ -14,16 +14,18 @@ public class IngredientList : MonoBehaviour
     [SerializeField] private Image timer;
     [SerializeField] private GameObject Loose;
     [SerializeField] private Canvas win;
-    [SerializeField] private float speed = 10;
+    [SerializeField] private float speed;
+    [SerializeField] private float monaSpeed;
     [SerializeField] private Validation bento;
     [SerializeField] public Box[] boxes = new Box[3];
+    public float fill = 0;
+    
     
 
     //int i = 0;
 
     private float _time;
     private float _actualTime;
-    private Renderer _renderer;
     private int _selector;
     
 
@@ -42,7 +44,6 @@ public class IngredientList : MonoBehaviour
         foreach (var sho in show)
         {
             _selector = Random.Range(0, ingredients.Length);
-            _renderer = ingredients[_selector].GetComponent<Renderer>();
             sho.tag = ingredients[_selector].tag;
             sho.sprite = imagenesShow[_selector];
         }
@@ -50,7 +51,7 @@ public class IngredientList : MonoBehaviour
 
     IEnumerator ShowCanva()
     {
-        speed = 10;
+        speed = monaSpeed;
         yield return new WaitForSeconds(1.2f);
         Loose.SetActive(false);
     }
@@ -104,14 +105,14 @@ public class IngredientList : MonoBehaviour
     {
         if (win.gameObject.activeInHierarchy == true || Loose.activeInHierarchy == true)
         {
-            speed = 10;
+            speed = monaSpeed;
         }
     }
 
     private void OnTriggerStay(Collider other)
     {
         _actualTime = Time.time - _time;
-        float fill = _actualTime / 10;
+        fill = _actualTime / 10;
         fill = (1 - fill) + 0;
         timer.fillAmount = fill;
         if (_actualTime <= 10)
