@@ -10,9 +10,11 @@ public class Validation : MonoBehaviour
     [SerializeField] private GameObject canvalosse;
     [SerializeField] private Box[] orderZones = new Box[3];
     [SerializeField] private IngredientList player;
+    [SerializeField] private float canvaTime;
     private bool verify = true;
     public bool canVerify = true;
     public bool canValidate = true;
+
 
 
     // Update is called once per frame
@@ -58,7 +60,7 @@ public class Validation : MonoBehaviour
 
     IEnumerator Gone(GameObject canva)
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(canvaTime);
         canva.SetActive(false);
         verify = true;
         foreach(var zone in orderZones)
@@ -80,4 +82,5 @@ public class Validation : MonoBehaviour
             peticiones[i] = player.show[i].gameObject;
         }
     }
+
 }

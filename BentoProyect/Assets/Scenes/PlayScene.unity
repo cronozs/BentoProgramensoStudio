@@ -6462,7 +6462,7 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -395, y: -73}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1.29, y: 0.5}
 --- !u!114 &422510818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12940,7 +12940,7 @@ PrefabInstance:
       objectReference: {fileID: 1521680155}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: speed
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: winPs
@@ -12950,6 +12950,10 @@ PrefabInstance:
       propertyPath: Client
       value: 
       objectReference: {fileID: 6946193308959565326, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
+    - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
+      propertyPath: canvaTime
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: monaSpeed
       value: 12

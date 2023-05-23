@@ -7,10 +7,10 @@ using UnityEditor;
 
 public class IngredientList : MonoBehaviour
 {
-    [SerializeField] private GameObject[] ingredients = new GameObject[3];
-    [SerializeField] private Sprite[] imagenesShow = new Sprite[3];
-    [SerializeField] private Drag_prueba[] ingred = new Drag_prueba[3];
-    [SerializeField] public  Image[] show = new Image[3];
+    [SerializeField] private GameObject[] ingredients;
+    [SerializeField] private Sprite[] imagenesShow;
+    [SerializeField] private Drag_prueba[] ingred;
+    [SerializeField] public  Image[] show;
     [SerializeField] private Image timer;
     [SerializeField] private GameObject Loose;
     [SerializeField] private Canvas win;
@@ -18,6 +18,7 @@ public class IngredientList : MonoBehaviour
     [SerializeField] private float monaSpeed;
     [SerializeField] private Validation bento;
     [SerializeField] public Box[] boxes = new Box[3];
+    [SerializeField] private float canvaTime;
     public float fill = 0;
     
     
@@ -52,7 +53,7 @@ public class IngredientList : MonoBehaviour
     IEnumerator ShowCanva()
     {
         speed = monaSpeed;
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(canvaTime);
         Loose.SetActive(false);
     }
 
