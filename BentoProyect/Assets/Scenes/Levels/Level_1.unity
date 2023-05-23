@@ -11418,6 +11418,7 @@ MonoBehaviour:
   lose: {fileID: 417393834}
   win: {fileID: 1077827522}
   winPs: {fileID: 150076005}
+  monacambio: 2
 --- !u!1 &1790329295
 GameObject:
   m_ObjectHideFlags: 0
