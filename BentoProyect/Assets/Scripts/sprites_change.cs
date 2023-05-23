@@ -20,14 +20,14 @@ public class sprites_change : MonoBehaviour
 
     private void Update()
     {
-        if (lose.isActiveAndEnabled)
+        if (lose.gameObject.activeInHierarchy)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = enojada;
             StartCoroutine(Default());
 
         }
 
-        if (win.isActiveAndEnabled)
+        if (win.gameObject.activeInHierarchy)
         {
             winPs.Play();
             gameObject.GetComponent<SpriteRenderer>().sprite = feliz;
