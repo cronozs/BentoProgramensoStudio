@@ -1,6 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine.UI;
 using UnityEngine;
 
@@ -12,6 +10,7 @@ public class showPoints : MonoBehaviour
     public Text Final;
     public GameObject boton;
     [SerializeField] private IngredientList multy;
+    [SerializeField] public int pointsToWin;
 
     private void Awake()
     {
@@ -20,7 +19,7 @@ public class showPoints : MonoBehaviour
 
     public void Update()
     {
-        if (points < 10)
+        if (points < pointsToWin)
         {
             
             boton.SetActive(false);

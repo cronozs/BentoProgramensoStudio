@@ -12,6 +12,7 @@ public class Loading_Kenny_Vers : MonoBehaviour
    public GameObject MScreen;
    public Slider slider; 
    
+   
    public void LoadLevel(int sceneIndex)
    {
       StartCoroutine(LoadAsync(sceneIndex));
@@ -25,6 +26,7 @@ public class Loading_Kenny_Vers : MonoBehaviour
       //yield return new WaitForSeconds(1);
       Debug.Log("cargando");
       AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
+      Debug.Log("este boton si sirve");
       
       while (!operation.isDone)
       {
