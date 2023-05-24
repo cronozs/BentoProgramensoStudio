@@ -76,9 +76,14 @@ public class IngredientList : MonoBehaviour
         {
             _time = Time.time;
             speed = 0;
+            int j = 0;
             for(int i = 0; i<ingred.Length-1; i++)
             {
-                ingred[i].orden = show[i].gameObject;
+                ingred[i].orden = show[j].gameObject;
+                if(j >= 2)
+                {
+                    j = 2;
+                }
             }
             foreach (var area in boxes)
             {

@@ -7434,6 +7434,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tofu
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f0a2ee3dd3c7b6458faa7ee0d7baf4b, type: 3}
+      propertyPath: m_TagString
+      value: Tofu
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f0a2ee3dd3c7b6458faa7ee0d7baf4b, type: 3}
 --- !u!1 &549930476
@@ -8976,6 +8980,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 7e15dec5049c2e346b5f9755230bb897, type: 2}
     - target: {fileID: 919132149155446097, guid: 2e7751d13d304a34c9a21572486f9f36, type: 3}
       propertyPath: m_Name
+      value: Sushi
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e7751d13d304a34c9a21572486f9f36, type: 3}
+      propertyPath: m_TagString
       value: Sushi
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -13951,7 +13959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: ingred.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: show.Array.data[0]
@@ -13994,12 +14002,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1710789449}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
+      propertyPath: ingred.Array.data[4]
+      value: 
+      objectReference: {fileID: 984457844}
+    - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: ingredients.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: imagenesShow.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: ingredients.Array.data[0]
@@ -14017,6 +14029,10 @@ PrefabInstance:
       propertyPath: ingredients.Array.data[3]
       value: 
       objectReference: {fileID: 1710789443}
+    - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
+      propertyPath: ingredients.Array.data[4]
+      value: 
+      objectReference: {fileID: 984457838}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: ImagenesShow.Array.data[0]
       value: 
@@ -14045,6 +14061,10 @@ PrefabInstance:
       propertyPath: imagenesShow.Array.data[3]
       value: 
       objectReference: {fileID: 21300000, guid: da61dc855ec94d7498916479ef5d103a, type: 3}
+    - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
+      propertyPath: imagenesShow.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 22bcbefd361331f4fbc343406252f029, type: 3}
     - target: {fileID: 383066285747359183, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: m_RootOrder
       value: 4
