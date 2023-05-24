@@ -18,23 +18,8 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelMenu.unity
     guid: ce7e9c2e7b2b9b248b630c7f8e31b4be
   - enabled: 1
-    path: Assets/Scenes/PlayScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+    path: Assets/Scenes/Infinite.unity
+    guid: eb7c5608f0886df4680f0ded7f98175b
   - enabled: 1
     path: Assets/Scenes/Levels/Level_1.unity
     guid: 4ef4fc68f6fd1d24896311defb93ce33
@@ -46,8 +31,26 @@ EditorBuildSettings:
     guid: 35ac18fbe04d500489ea24e577b36ec7
   - enabled: 1
     path: Assets/Scenes/Levels/Level_4.unity
-    guid: edb1a688bb1aa664b9133c96e3b669c8
+    guid: 2a745879fbb4e4e45819efee9553dbc7
   - enabled: 1
     path: Assets/Scenes/Levels/Level_5.unity
     guid: c4ef5532291c7ad4ba94ad6d6c43cf18
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

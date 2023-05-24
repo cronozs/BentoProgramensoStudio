@@ -8607,7 +8607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mins: {fileID: 1763283028}
   segs: {fileID: 934346271}
-  Tiemp: 100
+  Tiemp: 60
   gameOver: {fileID: 1192646934}
 --- !u!114 &910077673
 MonoBehaviour:
@@ -13080,6 +13080,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 463086706}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
+      propertyPath: imagenesShow.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: ingredients.Array.data[0]
       value: 
       objectReference: {fileID: 1993271806}
@@ -13110,11 +13114,11 @@ PrefabInstance:
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: imagenesShow.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: 29059e19e492b4b4fb2a9b721575779f, type: 3}
+      objectReference: {fileID: 21300000, guid: 81663270b4a549b4c81c18f75b12648a, type: 3}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: imagenesShow.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: c1ce269d1db4f7d479b0ad9d1c444bdc, type: 3}
+      objectReference: {fileID: 21300000, guid: 8e4c87d1368909a4a941ff31b43bd2d1, type: 3}
     - target: {fileID: 383066285747359183, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: m_RootOrder
       value: 4

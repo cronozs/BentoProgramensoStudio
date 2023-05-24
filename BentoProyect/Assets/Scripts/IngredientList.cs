@@ -129,14 +129,7 @@ public class IngredientList : MonoBehaviour
         {
             Loose.SetActive(true);
             StartCoroutine(ShowCanva());
-            /*foreach (var zone in boxes)
-            {
-                zone.canDes = true;
-            }
-            foreach (var area in boxes)
-            {
-                area.tag = "DropArea";
-            }*/
+           
         }
     }
 
