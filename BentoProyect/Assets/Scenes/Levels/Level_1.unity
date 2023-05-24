@@ -8019,10 +8019,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
+  m_BlockingObjects: 3
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 23
 --- !u!114 &714355596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13038,6 +13038,10 @@ PrefabInstance:
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: monaSpeed
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
+      propertyPath: timeOfOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: show.Array.size

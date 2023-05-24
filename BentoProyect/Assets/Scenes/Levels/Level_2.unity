@@ -13040,6 +13040,10 @@ PrefabInstance:
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
+      propertyPath: timeOfOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: show.Array.size
       value: 3
       objectReference: {fileID: 0}

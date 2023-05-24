@@ -19,6 +19,7 @@ public class IngredientList : MonoBehaviour
     [SerializeField] private Validation bento;
     [SerializeField] public Box[] boxes = new Box[3];
     [SerializeField] private float canvaTime;
+    [SerializeField] private int timeOfOrder;
     public float fill = 0;
     
     
@@ -118,10 +119,10 @@ public class IngredientList : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         _actualTime = Time.time - _time;
-        fill = _actualTime / 10;
+        fill = _actualTime / timeOfOrder;
         fill = (1 - fill) + 0;
         timer.fillAmount = fill;
-        if (_actualTime <= 10)
+        if (_actualTime <= timeOfOrder)
         {
             Win();
         }
