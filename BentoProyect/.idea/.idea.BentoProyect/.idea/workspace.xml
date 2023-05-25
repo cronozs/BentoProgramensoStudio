@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22d57f28-93f4-4356-8310-3564d9823dd9" name="Changes" comment="" />
+    <list default="true" id="22d57f28-93f4-4356-8310-3564d9823dd9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BentoProyect/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BentoProyect/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Volume.mixer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Volume.mixer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/sprites_change.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/sprites_change.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,6 +120,7 @@
       <workItem from="1684778400799" duration="1708000" />
       <workItem from="1684814301122" duration="11000" />
       <workItem from="1684863824185" duration="569000" />
+      <workItem from="1684983336873" duration="2386000" />
     </task>
     <servers />
   </component>
