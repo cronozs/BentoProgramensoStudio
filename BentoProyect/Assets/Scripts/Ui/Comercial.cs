@@ -14,7 +14,8 @@ public class Comercial : MonoBehaviour
     public GameObject puntaje;
     public GameObject loadingScreen;
     public GameObject MScreen;
-    public Slider slider; 
+    public Slider slider;
+    public GameObject offButton;
     
    
     public void playAd()
@@ -24,6 +25,9 @@ public class Comercial : MonoBehaviour
         gameOver.SetActive(false);
         timer.SetActive(false);
         puntaje.SetActive(false);
+        offButton.SetActive(true);
+   
+
     }
 
     public void returnMenu()
@@ -67,4 +71,5 @@ public class Comercial : MonoBehaviour
             yield return null;
         }
     }
+    
 }
