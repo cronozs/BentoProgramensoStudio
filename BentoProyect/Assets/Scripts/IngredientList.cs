@@ -90,6 +90,7 @@ public class IngredientList : MonoBehaviour
             {
                 var col = area.GetComponent<BoxCollider>();
                 col.enabled = true;
+                if (area.tag != "DropArea") area.canDes = true;
                 area.tag = "DropArea";
             }
             ChoseIngredients();
@@ -134,5 +135,8 @@ public class IngredientList : MonoBehaviour
         }
     }
 
-
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(0.01f);
+    }
 }
