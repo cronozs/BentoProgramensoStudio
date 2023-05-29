@@ -25,8 +25,8 @@ public class sprites_change : MonoBehaviour
         if (lose.gameObject.activeInHierarchy)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = enojada;
-            StartCoroutine(Default());
-            Enojada.Play();
+            StartCoroutine(Default(Enojada));
+            //Enojada.Play();
 
         }
 
@@ -34,15 +34,19 @@ public class sprites_change : MonoBehaviour
         {
             winPs.Play();
             gameObject.GetComponent<SpriteRenderer>().sprite = feliz;
-            StartCoroutine(Default());
-            Yippe.Play();
+            StartCoroutine(Default(Yippe));
+            //Yippe.Play();
 
         }
 
     }
 
-    IEnumerator Default()
+    IEnumerator Default(AudioSource sonido)
     {
+        if (!sonido.isPlaying)
+        {
+            sonido.Play();
+        }
         yield return new WaitForSeconds(monacambio);
         gameObject.GetComponent<SpriteRenderer>().sprite = normal;
     }
