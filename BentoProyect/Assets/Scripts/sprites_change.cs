@@ -24,18 +24,18 @@ public class sprites_change : MonoBehaviour
     {
         if (lose.gameObject.activeInHierarchy)
         {
-            Enojada.Play();
             gameObject.GetComponent<SpriteRenderer>().sprite = enojada;
             StartCoroutine(Default());
+            Enojada.Play();
 
         }
 
         if (win.gameObject.activeInHierarchy)
         {
-            Yippe.Play();
             winPs.Play();
             gameObject.GetComponent<SpriteRenderer>().sprite = feliz;
             StartCoroutine(Default());
+            Yippe.Play();
 
         }
 
