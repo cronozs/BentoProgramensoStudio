@@ -343,7 +343,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "D\xEDa 5\n$60 para ganar"
+  m_Text: "D\xEDa 5\n$45 para ganar"
 --- !u!222 &42661226
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9307,7 +9307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mins: {fileID: 1763283028}
   segs: {fileID: 934346271}
-  Tiemp: 110
+  Tiemp: 120
   gameOver: {fileID: 1192646934}
 --- !u!114 &910077673
 MonoBehaviour:
@@ -10359,7 +10359,7 @@ MonoBehaviour:
   Final: {fileID: 1334719446}
   boton: {fileID: 2063947653}
   multy: {fileID: 383066286236365045}
-  pointsToWin: 60
+  pointsToWin: 45
 --- !u!222 &1067702066
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14347,7 +14347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: timeOfOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: show.Array.size
