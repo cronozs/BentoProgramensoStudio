@@ -8421,8 +8421,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mins: {fileID: 1763283028}
   segs: {fileID: 934346271}
-  Tiemp: 1
+  Tiemp: 55
   gameOver: {fileID: 1192646934}
+  canvasWin: {fileID: 0}
 --- !u!114 &910077673
 MonoBehaviour:
   m_ObjectHideFlags: 0
