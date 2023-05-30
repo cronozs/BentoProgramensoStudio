@@ -10393,7 +10393,6 @@ RectTransform:
   m_Children:
   - {fileID: 2068585936}
   - {fileID: 1927911892}
-  - {fileID: 1330775575}
   m_Father: {fileID: 903488027}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11087,12 +11086,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330775572}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -649.54, y: -353.85, z: 2.64}
+  m_LocalPosition: {x: -9.539978, y: 6.14999, z: 2.64}
   m_LocalScale: {x: 0.9300001, y: 1.0031241, z: 0.5722056}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1063032047}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1334719444
 GameObject:
@@ -11711,7 +11710,7 @@ MonoBehaviour:
   - {fileID: 1044967876}
   - {fileID: 508869169}
   player: {fileID: 383066286236365045}
-  canvaTime: 0.5
+  canvaTime: 0.3
   canVerify: 1
   canValidate: 1
 --- !u!1 &1524679603
@@ -12693,7 +12692,7 @@ MonoBehaviour:
   winPs: {fileID: 150076005}
   Yippe: {fileID: 1053707623}
   Enojada: {fileID: 760417167}
-  monacambio: 0.5
+  monacambio: 0.3
 --- !u!1 &1790329295
 GameObject:
   m_ObjectHideFlags: 0
@@ -14303,7 +14302,7 @@ PrefabInstance:
       objectReference: {fileID: 6946193308959565326, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: canvaTime
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: monaSpeed

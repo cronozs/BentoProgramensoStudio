@@ -38,7 +38,7 @@ public class showPoints : MonoBehaviour
     public void addScore()
     {
         multy = FindObjectOfType<IngredientList>();
-        points += (multy.fill * 5);
+        if (multy.fill > 0) points += (multy.fill * 5);
         points = Mathf.Round(points * 10f) / 10f;
         Puntaje.text =  "$" + points.ToString();
         Final.text = "$" + points.ToString() + " en propinas";
