@@ -7,6 +7,7 @@ public class GlobalTimer : MonoBehaviour
     public Text segs;
     public float Tiemp;
     public GameObject gameOver;
+    [SerializeField] public GameObject canvasWin;
    
   
 
@@ -44,6 +45,7 @@ public class GlobalTimer : MonoBehaviour
         {
             Time.timeScale = 0f;
             gameOver.gameObject.SetActive(true);
+            canvasWin.SetActive(false);
         }
 
 

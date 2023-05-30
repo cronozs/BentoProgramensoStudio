@@ -5,8 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22d57f28-93f4-4356-8310-3564d9823dd9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/VFX/ENOJADA_BIEN.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/VFX/ENOJADA_BIEN.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/VFX/FINAL_YIPEE.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/VFX/FINAL_YIPEE.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/VFX/enojada_mona.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/VFX/enojada_mona.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/VFX/yipee_monaa.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/VFX/yipee_monaa.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BentoProyect/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BentoProyect/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Volume.mixer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Volume.mixer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Infinite.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Infinite.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level_2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level_3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level_3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level_4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level_4.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level_5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level_5.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GlobalTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GlobalTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IngredientList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IngredientList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Comercial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/Comercial.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/sprites_change.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/sprites_change.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +140,8 @@
       <workItem from="1684814301122" duration="11000" />
       <workItem from="1684905705057" duration="6450000" />
       <workItem from="1685031199767" duration="2319000" />
-      <workItem from="1685382664274" duration="1634000" />
+      <workItem from="1685382664274" duration="374000" />
+      <workItem from="1685468259049" duration="304000" />
     </task>
     <servers />
   </component>
