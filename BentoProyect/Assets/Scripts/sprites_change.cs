@@ -11,6 +11,8 @@ public class sprites_change : MonoBehaviour
     public Canvas lose;
     public Canvas win;
     public ParticleSystem winPs;
+    public AudioSource Yippe;
+    public AudioSource Enojada;
     public float monacambio=1;
 
     private void Start()
@@ -24,6 +26,7 @@ public class sprites_change : MonoBehaviour
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = enojada;
             StartCoroutine(Default());
+            Enojada.Play();
 
         }
 
@@ -32,6 +35,7 @@ public class sprites_change : MonoBehaviour
             winPs.Play();
             gameObject.GetComponent<SpriteRenderer>().sprite = feliz;
             StartCoroutine(Default());
+            Yippe.Play();
 
         }
 
