@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 20
+  controlID: 3818
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 55
+  controlID: 3773
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 56
+  controlID: 3877
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,8 +189,8 @@ MonoBehaviour:
     y: 0
     width: 290.4
     height: 455.2
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: SimulatorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -217,12 +217,12 @@ MonoBehaviour:
     height: 455.2
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 14}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,8 +269,8 @@ MonoBehaviour:
     y: 0
     width: 363.19995
     height: 722.8
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -365,10 +365,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 12aa0100
-      m_LastClickedID: 109074
-      m_ExpandedIDs: b257ffffcc5cffff8261ffff1468ffffd871ffffa272ffff547dffff6082ffff6e83ffff7684ffff2c85ffff2686ffffea8dffff7497ffff7a98ffff2c99ffffe299ffff389fffff30a0ffff70a4ffffa8a5ffff46a9ffff3ad0ffff60d3ffff56d4ffff34d5ffff40d6ffff16d7ffff02d8ffffc0d8ffff00e0ffffaae0ffff1ee9ffff30fbffffd65b0000ca5c00008c7b0000c47c0000527d0000e2920000149300004c93000094aa000092b0000090b30000c2b900002cc000008ac000007ec100007ec50000f6c5000062c6000016c8000060f7000092f70000caf7000000fe0000340401009e040100261101000a120100be130100e2140100141501004c1501005a26010086290100842f0100ea2f010078300100e83f010020410100ae4101000e630100606c0100966c0100186d01009c8f010040980100649e0100e89e0100209f010004aa0100
+      scrollPos: {x: 0, y: 98.79999}
+      m_SelectedIDs: a4680000
+      m_LastClickedID: 0
+      m_ExpandedIDs: a087ffff60bdffff90bdffff18d4ffff86edffff24faffff30fbffff7e5c00009a690000fc690000f67e0000567f00005a7f00006e7f00003e900000229100002691000024920000d6920000e4af00001ab000001eb000009cb00000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -617,9 +617,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 641.89966, y: 306.6477, z: 0.55519104}
+    m_Target: {x: 725.03705, y: 361.01746, z: 0.636673}
     speed: 2
-    m_Value: {x: 641.89966, y: 306.6477, z: 0.55519104}
+    m_Value: {x: 725.03705, y: 361.01746, z: 0.636673}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -670,9 +670,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 469.32562
+    m_Target: 502.23096
     speed: 2
-    m_Value: 449.11542
+    m_Value: 502.23096
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -738,22 +738,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Videos
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Videos
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\karyv\Desktop\BENTOSI\BentoProgramensoStudio\BentoProyect
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 93.400024}
-    m_SelectedIDs: 105f0000
-    m_LastClickedID: 24336
-    m_ExpandedIDs: 00000000085f00000a5f00000c5f00000e5f0000105f0000125f000000ca9a3b
+    scrollPos: {x: 0, y: 240}
+    m_SelectedIDs: e25b0000
+    m_LastClickedID: 23522
+    m_ExpandedIDs: 00000000925b0000945b0000965b0000985b00009a5b00009c5b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -781,7 +781,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000085f00000a5f00000c5f00000e5f0000105f0000125f0000
+    m_ExpandedIDs: 00000000925b0000945b0000965b0000985b00009a5b00009c5b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -900,7 +900,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 594
+  m_LastVerticalScrollValue: 187.20001
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
