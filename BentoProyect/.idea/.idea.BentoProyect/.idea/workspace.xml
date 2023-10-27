@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="22d57f28-93f4-4356-8310-3564d9823dd9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BentoProyect/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BentoProyect/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +120,7 @@
       <workItem from="1685031199767" duration="2319000" />
       <workItem from="1685382664274" duration="374000" />
       <workItem from="1685468259049" duration="304000" />
-      <workItem from="1698190565542" duration="771000" />
+      <workItem from="1698190565542" duration="1326000" />
     </task>
     <servers />
   </component>
