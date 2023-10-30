@@ -104,7 +104,7 @@ public class IngredientList : MonoBehaviour
         {
             sho.sprite = null;
         }
-        this.transform.position = new Vector3(-15, 5, 5);
+        this.transform.position = new Vector3(-101, 9, 50);
         if (!this.gameObject.scene.isLoaded) return;
         Instantiate(this.gameObject);
     }
