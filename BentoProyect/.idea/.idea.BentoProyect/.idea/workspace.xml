@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22d57f28-93f4-4356-8310-3564d9823dd9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BentoProyect/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BentoProyect/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayScene 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayScene 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Drag_prueba.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Drag_prueba.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IngredientList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IngredientList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/sprites_change.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/sprites_change.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +119,7 @@
       <workItem from="1685382664274" duration="374000" />
       <workItem from="1685468259049" duration="304000" />
       <workItem from="1698370708328" duration="3284000" />
+      <workItem from="1698965468170" duration="315000" />
     </task>
     <servers />
   </component>
