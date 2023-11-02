@@ -731,7 +731,7 @@ PrefabInstance:
       objectReference: {fileID: 1073530598}
     - target: {fileID: 7628196837725102738, guid: 3da9a8dd1e035194b8956f6954b14c31, type: 3}
       propertyPath: fill
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7628196837725102738, guid: 3da9a8dd1e035194b8956f6954b14c31, type: 3}
       propertyPath: Loose
@@ -744,6 +744,10 @@ PrefabInstance:
     - target: {fileID: 7628196837725102738, guid: 3da9a8dd1e035194b8956f6954b14c31, type: 3}
       propertyPath: speed
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628196837725102738, guid: 3da9a8dd1e035194b8956f6954b14c31, type: 3}
+      propertyPath: canvaTime
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7628196837725102738, guid: 3da9a8dd1e035194b8956f6954b14c31, type: 3}
       propertyPath: monaSpeed
@@ -1237,6 +1241,10 @@ PrefabInstance:
     - target: {fileID: 8614954297824951587, guid: df9e1f1f3924eb244b5a1814b0cb69fa, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614954297941000565, guid: df9e1f1f3924eb244b5a1814b0cb69fa, type: 3}
+      propertyPath: Tiemp
+      value: 3600
       objectReference: {fileID: 0}
     - target: {fileID: 8614954297941000567, guid: df9e1f1f3924eb244b5a1814b0cb69fa, type: 3}
       propertyPath: m_UiScaleMode
@@ -2081,7 +2089,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -65.950195, y: -606.43506}
+  m_AnchoredPosition: {x: -65.950134, y: -606.43506}
   m_SizeDelta: {x: 797.7001, y: 1476.5498}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &793134390
@@ -2832,7 +2840,7 @@ PrefabInstance:
       objectReference: {fileID: 1073530594}
     - target: {fileID: 8769565746476911455, guid: 0ac2241ee821dc845af222b56bb42635, type: 3}
       propertyPath: canvaTime
-      value: 3
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8769565746476911455, guid: 0ac2241ee821dc845af222b56bb42635, type: 3}
       propertyPath: canvalosse
