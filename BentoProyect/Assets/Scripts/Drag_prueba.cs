@@ -42,7 +42,7 @@ public class Drag_prueba : MonoBehaviour
             {
                 copia.transform.position = hitInfo.transform.position;
                 hitInfo.transform.tag = gameObject.transform.tag;
-                //plop.Play();
+                plop.Play();
                 //Verificar();
             }
             else

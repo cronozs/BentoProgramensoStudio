@@ -198,7 +198,7 @@ MonoBehaviour:
   canvaLose: {fileID: 0}
   cliente: {fileID: 1457889273}
   enojada: {fileID: 21300000, guid: 1383331345fdd1f4c95a49af828d91dc, type: 3}
-  plop: {fileID: 0}
+  plop: {fileID: 1030862868}
   cylinder: {fileID: 0}
 --- !u!136 &122278979
 CapsuleCollider:
@@ -380,7 +380,7 @@ MonoBehaviour:
   canvaLose: {fileID: 0}
   cliente: {fileID: 1457889273}
   enojada: {fileID: 21300000, guid: 69d62f50d4105a548b21eb294a5a05de, type: 3}
-  plop: {fileID: 0}
+  plop: {fileID: 1030862868}
   cylinder: {fileID: 0}
 --- !u!65 &132485495
 BoxCollider:
@@ -511,7 +511,7 @@ MonoBehaviour:
   canvaLose: {fileID: 0}
   cliente: {fileID: 1457889273}
   enojada: {fileID: 21300000, guid: 69d62f50d4105a548b21eb294a5a05de, type: 3}
-  plop: {fileID: 0}
+  plop: {fileID: 1030862868}
   cylinder: {fileID: 0}
 --- !u!65 &133655652
 BoxCollider:
@@ -662,9 +662,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 319867936}
     - target: {fileID: 1777696268, guid: 3da9a8dd1e035194b8956f6954b14c31, type: 3}
+      propertyPath: Yippe
+      value: 
+      objectReference: {fileID: 960309592}
+    - target: {fileID: 1777696268, guid: 3da9a8dd1e035194b8956f6954b14c31, type: 3}
       propertyPath: winPs
       value: 
       objectReference: {fileID: 337080624}
+    - target: {fileID: 1777696268, guid: 3da9a8dd1e035194b8956f6954b14c31, type: 3}
+      propertyPath: Enojada
+      value: 
+      objectReference: {fileID: 1831206875}
     - target: {fileID: 7628196837725102737, guid: 3da9a8dd1e035194b8956f6954b14c31, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1503,7 +1511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &544688373
 Transform:
   m_ObjectHideFlags: 0
@@ -1623,7 +1631,7 @@ MonoBehaviour:
   canvaLose: {fileID: 0}
   cliente: {fileID: 1457889273}
   enojada: {fileID: 21300000, guid: 69d62f50d4105a548b21eb294a5a05de, type: 3}
-  plop: {fileID: 0}
+  plop: {fileID: 1030862868}
   cylinder: {fileID: 0}
 --- !u!65 &623216530
 BoxCollider:
@@ -1827,7 +1835,7 @@ MonoBehaviour:
   canvaLose: {fileID: 0}
   cliente: {fileID: 1457889273}
   enojada: {fileID: 21300000, guid: 69d62f50d4105a548b21eb294a5a05de, type: 3}
-  plop: {fileID: 0}
+  plop: {fileID: 1030862868}
   cylinder: {fileID: 0}
 --- !u!135 &631427135
 SphereCollider:
@@ -2252,7 +2260,7 @@ MonoBehaviour:
   canvaLose: {fileID: 0}
   cliente: {fileID: 1457889273}
   enojada: {fileID: 21300000, guid: 69d62f50d4105a548b21eb294a5a05de, type: 3}
-  plop: {fileID: 0}
+  plop: {fileID: 1030862868}
   cylinder: {fileID: 0}
 --- !u!135 &749872093
 SphereCollider:
@@ -2494,7 +2502,7 @@ MonoBehaviour:
   canvaLose: {fileID: 0}
   cliente: {fileID: 1457889273}
   enojada: {fileID: 21300000, guid: 1383331345fdd1f4c95a49af828d91dc, type: 3}
-  plop: {fileID: 0}
+  plop: {fileID: 1030862868}
   cylinder: {fileID: 0}
 --- !u!136 &876422257
 CapsuleCollider:
@@ -2667,7 +2675,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -5927164726776938627, guid: 0b98596a6d9ccbb42a8af4bd079be52f, type: 2}
   m_audioClip: {fileID: 8300000, guid: 15f0879f57114814d94d5b3114533870, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.506
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2935,7 +2943,7 @@ MonoBehaviour:
   canvaLose: {fileID: 0}
   cliente: {fileID: 1457889273}
   enojada: {fileID: 21300000, guid: 69d62f50d4105a548b21eb294a5a05de, type: 3}
-  plop: {fileID: 0}
+  plop: {fileID: 1030862868}
   cylinder: {fileID: 0}
 --- !u!65 &983180752
 BoxCollider:
@@ -3583,7 +3591,7 @@ MonoBehaviour:
   canvaLose: {fileID: 0}
   cliente: {fileID: 1457889273}
   enojada: {fileID: 21300000, guid: 69d62f50d4105a548b21eb294a5a05de, type: 3}
-  plop: {fileID: 0}
+  plop: {fileID: 1030862868}
   cylinder: {fileID: 0}
 --- !u!135 &1325219083
 SphereCollider:
@@ -3794,9 +3802,17 @@ PrefabInstance:
       value: 29.33
       objectReference: {fileID: 0}
     - target: {fileID: 7849925842390820746, guid: 2591e889a77f15f4cb41af749a3c6125, type: 3}
+      propertyPath: plop
+      value: 
+      objectReference: {fileID: 1030862868}
+    - target: {fileID: 7849925842390820746, guid: 2591e889a77f15f4cb41af749a3c6125, type: 3}
       propertyPath: cliente
       value: 
       objectReference: {fileID: 1457889273}
+    - target: {fileID: 7849925842870148210, guid: 2591e889a77f15f4cb41af749a3c6125, type: 3}
+      propertyPath: plop
+      value: 
+      objectReference: {fileID: 1030862868}
     - target: {fileID: 7849925842870148210, guid: 2591e889a77f15f4cb41af749a3c6125, type: 3}
       propertyPath: cliente
       value: 
@@ -3854,6 +3870,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7849925843153937723, guid: 2591e889a77f15f4cb41af749a3c6125, type: 3}
+      propertyPath: plop
+      value: 
+      objectReference: {fileID: 1030862868}
+    - target: {fileID: 7849925843153937723, guid: 2591e889a77f15f4cb41af749a3c6125, type: 3}
       propertyPath: cliente
       value: 
       objectReference: {fileID: 1457889273}
@@ -3862,9 +3882,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7849925843588207104, guid: 2591e889a77f15f4cb41af749a3c6125, type: 3}
+      propertyPath: plop
+      value: 
+      objectReference: {fileID: 1030862868}
+    - target: {fileID: 7849925843588207104, guid: 2591e889a77f15f4cb41af749a3c6125, type: 3}
       propertyPath: cliente
       value: 
       objectReference: {fileID: 1457889273}
+    - target: {fileID: 7849925844138742790, guid: 2591e889a77f15f4cb41af749a3c6125, type: 3}
+      propertyPath: plop
+      value: 
+      objectReference: {fileID: 1030862868}
     - target: {fileID: 7849925844138742790, guid: 2591e889a77f15f4cb41af749a3c6125, type: 3}
       propertyPath: cliente
       value: 
@@ -4083,7 +4111,7 @@ MonoBehaviour:
   canvaLose: {fileID: 0}
   cliente: {fileID: 1457889273}
   enojada: {fileID: 21300000, guid: 1383331345fdd1f4c95a49af828d91dc, type: 3}
-  plop: {fileID: 0}
+  plop: {fileID: 1030862868}
   cylinder: {fileID: 0}
 --- !u!136 &1541863613
 CapsuleCollider:
@@ -4563,7 +4591,7 @@ MonoBehaviour:
   canvaLose: {fileID: 0}
   cliente: {fileID: 1457889273}
   enojada: {fileID: 21300000, guid: 1383331345fdd1f4c95a49af828d91dc, type: 3}
-  plop: {fileID: 0}
+  plop: {fileID: 1030862868}
   cylinder: {fileID: 0}
 --- !u!136 &1816899592
 CapsuleCollider:
@@ -4689,7 +4717,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -5927164726776938627, guid: 0b98596a6d9ccbb42a8af4bd079be52f, type: 2}
   m_audioClip: {fileID: 8300000, guid: 7118a303498111e47b53a61e1c7e204c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.498
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4869,7 +4897,7 @@ MonoBehaviour:
   canvaLose: {fileID: 0}
   cliente: {fileID: 1457889273}
   enojada: {fileID: 21300000, guid: 69d62f50d4105a548b21eb294a5a05de, type: 3}
-  plop: {fileID: 0}
+  plop: {fileID: 1030862868}
   cylinder: {fileID: 0}
 --- !u!135 &1918223573
 SphereCollider:
@@ -5087,7 +5115,7 @@ MonoBehaviour:
   canvaLose: {fileID: 0}
   cliente: {fileID: 1457889273}
   enojada: {fileID: 21300000, guid: 1383331345fdd1f4c95a49af828d91dc, type: 3}
-  plop: {fileID: 0}
+  plop: {fileID: 1030862868}
   cylinder: {fileID: 0}
 --- !u!65 &2085916488
 BoxCollider:

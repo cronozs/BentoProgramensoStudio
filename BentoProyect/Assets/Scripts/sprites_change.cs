@@ -25,8 +25,8 @@ public class sprites_change : MonoBehaviour
         if (lose.gameObject.activeInHierarchy)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = enojada;
-            //StartCoroutine(Default(Enojada));
-            //Enojada.Play();
+            StartCoroutine(Default(Enojada));
+            Enojada.Play();
 
         }
 
@@ -34,8 +34,8 @@ public class sprites_change : MonoBehaviour
         {
             winPs.Play();
             gameObject.GetComponent<SpriteRenderer>().sprite = feliz;
-            //StartCoroutine(Default(Yippe));
-            //Yippe.Play();
+            StartCoroutine(Default(Yippe));
+            Yippe.Play();
 
         }
 
