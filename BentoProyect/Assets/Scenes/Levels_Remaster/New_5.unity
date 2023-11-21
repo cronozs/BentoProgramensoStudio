@@ -194,12 +194,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destinationTag: DropArea
   orden: {fileID: 2469509183034069502, guid: 107d62f42c30f47488ed70b474e7037f, type: 3}
-  canvaWin: {fileID: 0}
-  canvaLose: {fileID: 0}
+  canvaWin: {fileID: 1073530594}
+  canvaLose: {fileID: 319867932}
   cliente: {fileID: 1457889273}
   enojada: {fileID: 21300000, guid: 1383331345fdd1f4c95a49af828d91dc, type: 3}
   plop: {fileID: 1030862868}
-  cylinder: {fileID: 0}
+  cylinder: {fileID: 7628196837725102738, guid: 3da9a8dd1e035194b8956f6954b14c31, type: 3}
 --- !u!136 &122278979
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2506,12 +2506,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destinationTag: DropArea
   orden: {fileID: 2469509183034069502, guid: 107d62f42c30f47488ed70b474e7037f, type: 3}
-  canvaWin: {fileID: 0}
-  canvaLose: {fileID: 0}
+  canvaWin: {fileID: 1073530594}
+  canvaLose: {fileID: 319867932}
   cliente: {fileID: 1457889273}
   enojada: {fileID: 21300000, guid: 1383331345fdd1f4c95a49af828d91dc, type: 3}
   plop: {fileID: 1030862868}
-  cylinder: {fileID: 0}
+  cylinder: {fileID: 7628196837725102738, guid: 3da9a8dd1e035194b8956f6954b14c31, type: 3}
 --- !u!136 &876422257
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3637,6 +3637,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3121341755609505781, guid: 2591e889a77f15f4cb41af749a3c6125, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3673329858440490595, guid: 2591e889a77f15f4cb41af749a3c6125, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.2712985
@@ -3817,6 +3821,18 @@ PrefabInstance:
       propertyPath: cliente
       value: 
       objectReference: {fileID: 1457889273}
+    - target: {fileID: 7849925842390820746, guid: 2591e889a77f15f4cb41af749a3c6125, type: 3}
+      propertyPath: canvaWin
+      value: 
+      objectReference: {fileID: 1073530594}
+    - target: {fileID: 7849925842390820746, guid: 2591e889a77f15f4cb41af749a3c6125, type: 3}
+      propertyPath: cylinder
+      value: 
+      objectReference: {fileID: 7628196837725102738, guid: 3da9a8dd1e035194b8956f6954b14c31, type: 3}
+    - target: {fileID: 7849925842390820746, guid: 2591e889a77f15f4cb41af749a3c6125, type: 3}
+      propertyPath: canvaLose
+      value: 
+      objectReference: {fileID: 319867932}
     - target: {fileID: 7849925842870148210, guid: 2591e889a77f15f4cb41af749a3c6125, type: 3}
       propertyPath: plop
       value: 
@@ -4115,12 +4131,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destinationTag: DropArea
   orden: {fileID: 2469509183034069502, guid: 107d62f42c30f47488ed70b474e7037f, type: 3}
-  canvaWin: {fileID: 0}
-  canvaLose: {fileID: 0}
+  canvaWin: {fileID: 1073530594}
+  canvaLose: {fileID: 319867932}
   cliente: {fileID: 1457889273}
   enojada: {fileID: 21300000, guid: 1383331345fdd1f4c95a49af828d91dc, type: 3}
   plop: {fileID: 1030862868}
-  cylinder: {fileID: 0}
+  cylinder: {fileID: 7628196837725102738, guid: 3da9a8dd1e035194b8956f6954b14c31, type: 3}
 --- !u!136 &1541863613
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4595,12 +4611,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destinationTag: DropArea
   orden: {fileID: 2469509183034069502, guid: 107d62f42c30f47488ed70b474e7037f, type: 3}
-  canvaWin: {fileID: 0}
-  canvaLose: {fileID: 0}
+  canvaWin: {fileID: 1073530594}
+  canvaLose: {fileID: 319867932}
   cliente: {fileID: 1457889273}
   enojada: {fileID: 21300000, guid: 1383331345fdd1f4c95a49af828d91dc, type: 3}
   plop: {fileID: 1030862868}
-  cylinder: {fileID: 0}
+  cylinder: {fileID: 7628196837725102738, guid: 3da9a8dd1e035194b8956f6954b14c31, type: 3}
 --- !u!136 &1816899592
 CapsuleCollider:
   m_ObjectHideFlags: 0

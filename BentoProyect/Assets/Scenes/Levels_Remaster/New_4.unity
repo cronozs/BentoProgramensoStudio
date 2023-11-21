@@ -1348,7 +1348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8614954297941000565, guid: df9e1f1f3924eb244b5a1814b0cb69fa, type: 3}
       propertyPath: Tiemp
-      value: 3600
+      value: 95
       objectReference: {fileID: 0}
     - target: {fileID: 8614954297941000567, guid: df9e1f1f3924eb244b5a1814b0cb69fa, type: 3}
       propertyPath: m_UiScaleMode
