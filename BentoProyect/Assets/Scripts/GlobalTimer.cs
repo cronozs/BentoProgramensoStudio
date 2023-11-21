@@ -47,12 +47,7 @@ public class GlobalTimer : MonoBehaviour
             gameOver.gameObject.SetActive(true);
             canvasWin.SetActive(false);
         }
-
-
-
-
+        
     }
-
-
-  
+    
 }

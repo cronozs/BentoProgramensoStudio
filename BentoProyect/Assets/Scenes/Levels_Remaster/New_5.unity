@@ -751,7 +751,7 @@ PrefabInstance:
       objectReference: {fileID: 24794738}
     - target: {fileID: 7628196837725102738, guid: 3da9a8dd1e035194b8956f6954b14c31, type: 3}
       propertyPath: speed
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7628196837725102738, guid: 3da9a8dd1e035194b8956f6954b14c31, type: 3}
       propertyPath: canvaTime
@@ -1348,7 +1348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8614954297941000565, guid: df9e1f1f3924eb244b5a1814b0cb69fa, type: 3}
       propertyPath: Tiemp
-      value: 3600
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8614954297941000567, guid: df9e1f1f3924eb244b5a1814b0cb69fa, type: 3}
       propertyPath: m_UiScaleMode

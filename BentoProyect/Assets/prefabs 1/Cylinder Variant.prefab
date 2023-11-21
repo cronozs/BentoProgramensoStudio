@@ -250,7 +250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 383066285747359179, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: m_Name
-      value: Cylinder
+      value: Cylinder Variant
       objectReference: {fileID: 0}
     - target: {fileID: 383066285747359179, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: m_IsActive
@@ -270,7 +270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: speed
-      value: 12
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 383066285747359180, guid: 809b06babbcfd8540a7099460172ed35, type: 3}
       propertyPath: winPs
